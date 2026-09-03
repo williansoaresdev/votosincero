@@ -4,8 +4,10 @@ import { renderView } from "./router.js";
 import { renderHome } from "./views/home.js";
 import { renderQuiz, resetOptionOrderCache } from "./views/quiz.js";
 import { renderResult } from "./views/result.js";
-import { unlockAudio, playAdvance, playBack, playComplete, isMuted, toggleMuted } from "./audio.js";
+import { unlockAudio, playAdvance, playBack, playComplete, isMuted, toggleMuted, playTap } from "./audio.js";
 import { closeModal } from "./modal.js";
+import { shareApp } from "./share.js";
+import { showToast } from "./toast.js";
 
 let db = null;
 let pushedAny = false;
@@ -27,6 +29,14 @@ function setupChrome() {
     document.removeEventListener("pointerdown", unlockOnce);
   };
   document.addEventListener("pointerdown", unlockOnce);
+
+  const shareBtn = document.getElementById("share-toggle");
+  shareBtn.addEventListener("click", async () => {
+    playTap();
+    const outcome = await shareApp();
+    if (outcome === "copied") showToast("Link copiado! Cole e envie para seus amigos.");
+    else if (outcome === "failed") showToast("Não foi possível compartilhar. Copie o link da barra de endereço.");
+  });
 }
 
 function goHome(direction) {

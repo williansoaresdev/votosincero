@@ -1,5 +1,7 @@
 import { el } from "../utils.js";
 import { playTap } from "../audio.js";
+import { shareApp } from "../share.js";
+import { showToast } from "../toast.js";
 
 const TSE_URL =
   "https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026/resource/433ac1f4-07dc-44a2-bcbe-c87a2073721a";
@@ -93,6 +95,20 @@ export function renderResult(container, { ranking, onRestart }) {
       "Refazer o teste"
     ),
     el("div", { class: "farewell-banner" }, "🇧🇷 Desejamos a você uma ótima eleição!"),
+    el(
+      "button",
+      {
+        class: "btn btn-primary btn-block share-cta",
+        onClick: async () => {
+          playTap();
+          const outcome = await shareApp();
+          if (outcome === "copied") showToast("Link copiado! Cole e envie para seus amigos.");
+          else if (outcome === "failed")
+            showToast("Não foi possível compartilhar. Copie o link da barra de endereço.");
+        },
+      },
+      "📤 Compartilhar com amigos"
+    ),
     el("footer", { class: "app-footer" }, [
       el(
         "a",
