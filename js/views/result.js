@@ -2,6 +2,7 @@ import { el } from "../utils.js";
 import { playTap } from "../audio.js";
 import { shareApp } from "../share.js";
 import { showToast } from "../toast.js";
+import { trackEvent } from "../analytics.js";
 
 const TSE_URL =
   "https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026/resource/433ac1f4-07dc-44a2-bcbe-c87a2073721a";
@@ -49,6 +50,14 @@ function renderCandidateCard(entry, rank) {
     playTap();
     const isOpen = card.classList.toggle("open");
     summaryBtn.setAttribute("aria-expanded", String(isOpen));
+    if (isOpen) {
+      trackEvent("expandir_candidato", {
+        candidato_numero: candidato.numero,
+        candidato_nome: candidato.nome,
+        posicao_ranking: rank,
+        total_matches: total,
+      });
+    }
   });
 
   if (candidato.pdf) {
@@ -61,6 +70,11 @@ function renderCandidateCard(entry, rank) {
           target: "_blank",
           rel: "noopener",
           download: "",
+          onClick: () =>
+            trackEvent("baixar_pdf", {
+              candidato_numero: candidato.numero,
+              candidato_nome: candidato.nome,
+            }),
         },
         "Baixar plano de governo completo (PDF)"
       )
@@ -102,6 +116,7 @@ export function renderResult(container, { ranking, onRestart }) {
         onClick: async () => {
           playTap();
           const outcome = await shareApp();
+          trackEvent("compartilhar", { local: "resultado_cta", resultado: outcome });
           if (outcome === "copied") showToast("Link copiado! Cole e envie para seus amigos.");
           else if (outcome === "failed")
             showToast("Não foi possível compartilhar. Copie o link da barra de endereço.");

@@ -3,6 +3,7 @@ import { opcoesPorEsfera, ESFERA_ICONS } from "../data.js";
 import { isSelected, toggleAnswer } from "../state.js";
 import { openModal } from "../modal.js";
 import { playSelect, playDeselect, playTap } from "../audio.js";
+import { trackEvent } from "../analytics.js";
 
 let optionOrderCache = {};
 
@@ -67,6 +68,11 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
               class: "link-btn",
               onClick: (e) => {
                 e.stopPropagation();
+                trackEvent("ver_plano_completo", {
+                  esfera,
+                  candidato_numero: opt.numero,
+                  candidato_nome: opt.nome,
+                });
                 openModal({
                   title: `Proposta ${letra}`,
                   letra,
@@ -89,12 +95,19 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
         card.classList.remove("shake");
         void card.offsetWidth;
         card.classList.add("shake");
+        trackEvent("limite_selecao_atingido", { esfera });
         return;
       }
       const nowSelected = toggleAnswer(esfera, opt.numero);
       card.classList.toggle("selected", nowSelected);
       if (nowSelected) playSelect();
       else playDeselect();
+      trackEvent("selecionar_proposta", {
+        esfera,
+        candidato_numero: opt.numero,
+        candidato_nome: opt.nome,
+        selecionado: nowSelected,
+      });
       refreshCardStates();
     };
 

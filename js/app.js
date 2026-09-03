@@ -8,6 +8,7 @@ import { unlockAudio, playAdvance, playBack, playComplete, isMuted, toggleMuted,
 import { closeModal } from "./modal.js";
 import { shareApp } from "./share.js";
 import { showToast } from "./toast.js";
+import { trackPageView, trackEvent } from "./analytics.js";
 
 let db = null;
 let pushedAny = false;
@@ -34,6 +35,7 @@ function setupChrome() {
   shareBtn.addEventListener("click", async () => {
     playTap();
     const outcome = await shareApp();
+    trackEvent("compartilhar", { local: "cabecalho", resultado: outcome });
     if (outcome === "copied") showToast("Link copiado! Cole e envie para seus amigos.");
     else if (outcome === "failed") showToast("Não foi possível compartilhar. Copie o link da barra de endereço.");
   });
@@ -41,6 +43,7 @@ function setupChrome() {
 
 function goHome(direction) {
   renderView((app) => renderHome(app, { onStart: startQuizFlow }), direction);
+  trackPageView("/", "Home");
 }
 
 function goQuiz(direction) {
@@ -58,11 +61,21 @@ function goQuiz(direction) {
       }),
     direction
   );
+  trackPageView(`/esfera/${encodeURIComponent(esfera)}`, `Esfera: ${esfera}`);
 }
 
 function goResult(direction) {
   const ranking = state.computeRanking(db);
   renderView((app) => renderResult(app, { ranking, onRestart: restartFlow }), direction);
+  trackPageView("/resultado", "Resultado");
+  const top = ranking[0];
+  if (top) {
+    trackEvent("concluir_teste", {
+      candidato_numero: top.candidato.numero,
+      candidato_nome: top.candidato.nome,
+      total_matches: top.total,
+    });
+  }
 }
 
 function startQuizFlow() {
@@ -70,6 +83,7 @@ function startQuizFlow() {
   state.startQuiz();
   resetOptionOrderCache();
   pushState();
+  trackEvent("iniciar_teste");
   goQuiz("forward");
 }
 
@@ -97,6 +111,7 @@ function backFlow() {
 
 function restartFlow() {
   closeModal();
+  trackEvent("refazer_teste");
   state.resetState();
   resetOptionOrderCache();
   pushState();

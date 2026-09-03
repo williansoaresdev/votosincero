@@ -103,6 +103,9 @@ export function opcoesPorEsfera(db, esfera) {
     })
     .map((c) => ({
       numero: c.numero,
+      // "nome" não é exibido na tela do teste (que é cego) — serve apenas
+      // para identificar o candidato nos eventos enviados ao analytics.
+      nome: c.nome,
       tweet: c.esferas[esfera].tweet.trim(),
       macro: c.esferas[esfera].macro.trim(),
     }));

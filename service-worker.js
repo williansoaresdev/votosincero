@@ -1,4 +1,4 @@
-const VERSION = "v5";
+const VERSION = "v8";
 const APP_SHELL_CACHE = `voto-sincero-shell-${VERSION}`;
 const RUNTIME_CACHE = `voto-sincero-runtime-${VERSION}`;
 
@@ -18,6 +18,7 @@ const APP_SHELL_FILES = [
   "./js/install.js",
   "./js/share.js",
   "./js/toast.js",
+  "./js/analytics.js",
   "./js/views/home.js",
   "./js/views/quiz.js",
   "./js/views/result.js",
