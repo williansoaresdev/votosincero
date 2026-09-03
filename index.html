@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Voto Sincero — Descubra qual candidato combina com você</title>
+  <meta name="description" content="Avalie ideias de planos de governo sem saber de quem são e descubra quais candidatos mais combinam com os seus valores." />
+
+  <meta name="theme-color" content="#0f7a44" />
+  <meta name="color-scheme" content="light" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="./icons/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Voto Sincero" />
+
+  <meta property="og:title" content="Voto Sincero" />
+  <meta property="og:description" content="Avalie ideias de planos de governo sem saber de quem são e descubra quem combina com você." />
+  <meta property="og:image" content="./icons/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-header-brand">
+        <img src="./icons/icon-96.png" alt="" width="28" height="28" />
+        <span>Voto Sincero</span>
+      </div>
+      <button id="mute-toggle" class="icon-btn" type="button" aria-label="Silenciar som">🔊</button>
+    </header>
+
+    <main id="app" class="app-main" aria-live="polite"></main>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
