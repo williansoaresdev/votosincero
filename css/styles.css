@@ -899,6 +899,212 @@ body.modal-open {
   text-decoration: underline;
 }
 
+/* ---------------------------------- Imprensa (press release) ---------------------------------- */
+
+.press-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-500);
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.press-back:active {
+  transform: translateY(1px);
+}
+
+.press-tag {
+  display: inline-block;
+  color: var(--green-700);
+  background: var(--green-100);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin: 18px 0 12px;
+}
+
+.press-dateline {
+  color: var(--ink-500);
+  font-size: 13px;
+  margin: 0 0 6px;
+}
+
+.press-headline {
+  color: var(--green-900);
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.press-deck {
+  color: var(--ink-700);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+
+.press-lead {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-900);
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.press-section {
+  margin: 0 0 22px;
+}
+
+.press-section h2 {
+  color: var(--green-800);
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.press-section p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-700);
+  margin: 0 0 12px;
+}
+
+.press-section p:last-child {
+  margin-bottom: 0;
+}
+
+.press-quote {
+  background: var(--white);
+  border-left: 4px solid var(--green-500);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-card);
+  margin: 0 0 22px;
+}
+
+.press-quote p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-900);
+  font-style: italic;
+}
+
+.press-quote cite {
+  display: block;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--green-700);
+}
+
+.press-quote cite span {
+  display: block;
+  font-weight: 500;
+  color: var(--ink-500);
+  margin-top: 2px;
+}
+
+.press-features {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.press-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  box-shadow: var(--shadow-card);
+}
+
+.press-feature-icon {
+  flex: 0 0 auto;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.press-feature p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-700);
+}
+
+.press-feature strong {
+  color: var(--ink-900);
+}
+
+.press-boilerplate {
+  background: var(--green-050);
+  border: 2px solid var(--green-100);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin: 0 0 22px;
+}
+
+.press-boilerplate h2 {
+  color: var(--green-800);
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.press-boilerplate p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-700);
+  margin: 0;
+}
+
+.press-contact {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 16px 18px;
+  margin: 0 0 8px;
+}
+
+.press-contact h2 {
+  color: var(--green-800);
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.press-contact p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-700);
+}
+
+.press-contact a {
+  color: var(--green-700);
+  font-weight: 700;
+}
+
+.press-end {
+  text-align: center;
+  color: var(--ink-300);
+  letter-spacing: 3px;
+  font-weight: 800;
+  margin: 6px 0 26px;
+}
+
 /* ---------------------------------- Responsivo ---------------------------------- */
 
 @media (min-width: 640px) {
@@ -910,6 +1116,9 @@ body.modal-open {
   }
   .option-text {
     font-size: 16px;
+  }
+  .press-headline {
+    font-size: 28px;
   }
 }
 

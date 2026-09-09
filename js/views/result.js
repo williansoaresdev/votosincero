@@ -131,6 +131,11 @@ export function renderResult(container, { ranking, onRestart }) {
         "Consulte os planos de governo oficiais no TSE"
       ),
       el("a", { href: `mailto:${CONTACT_EMAIL}` }, "Fale com o criador do site"),
+      el(
+        "a",
+        { href: "./imprensa.html", target: "_blank", rel: "noopener" },
+        "📰 Comunicado à imprensa"
+      ),
     ]),
   ]);
 

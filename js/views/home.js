@@ -36,6 +36,13 @@ export function renderHome(container, { onStart }) {
       ),
       el("p", { class: "home-note" }, ""),
     ]),
+    el("footer", { class: "app-footer" }, [
+      el(
+        "a",
+        { href: "./imprensa.html", target: "_blank", rel: "noopener" },
+        "📰 Comunicado à imprensa"
+      ),
+    ]),
   ]);
   container.appendChild(view);
 

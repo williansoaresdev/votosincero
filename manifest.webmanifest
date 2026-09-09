@@ -12,6 +12,15 @@
   "lang": "pt-BR",
   "dir": "ltr",
   "categories": ["politics", "education", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Comunicado à Imprensa",
+      "short_name": "Imprensa",
+      "description": "Release do Voto Sincero para jornalistas e veículos de imprensa",
+      "url": "./imprensa.html",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ],
   "icons": [
     { "src": "icons/icon-72.png", "sizes": "72x72", "type": "image/png", "purpose": "any" },
     { "src": "icons/icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },

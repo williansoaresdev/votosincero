@@ -1,10 +1,11 @@
-const VERSION = "v8";
+const VERSION = "v9";
 const APP_SHELL_CACHE = `voto-sincero-shell-${VERSION}`;
 const RUNTIME_CACHE = `voto-sincero-runtime-${VERSION}`;
 
 const APP_SHELL_FILES = [
   "./",
   "./index.html",
+  "./imprensa.html",
   "./manifest.webmanifest",
   "./planos_governo.json",
   "./css/styles.css",
@@ -72,16 +73,17 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Navegação (abrir o app): tenta a rede primeiro, cai para o cache offline.
+  // Navegação (abrir o app ou uma página como imprensa.html): tenta a rede
+  // primeiro, cai para o cache offline da própria página ou, por fim, para o index.html.
   if (request.mode === "navigate") {
     event.respondWith(
       fetch(request)
         .then((response) => {
           const copy = response.clone();
-          caches.open(APP_SHELL_CACHE).then((cache) => cache.put("./index.html", copy));
+          caches.open(APP_SHELL_CACHE).then((cache) => cache.put(request, copy));
           return response;
         })
-        .catch(() => caches.match("./index.html"))
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("./index.html")))
     );
     return;
   }
