@@ -21,7 +21,8 @@ function getOrderedOptions(esfera, options) {
     .filter(Boolean);
 }
 
-const MAX_SELECTIONS = 3;
+// 2º turno: só há 2 candidatos, então o eleitor escolhe 1 plano por esfera.
+const MAX_SELECTIONS = 1;
 
 export function renderQuiz(container, { db, esfera, index, total, onNext, onBack }) {
   const options = getOrderedOptions(esfera, opcoesPorEsfera(db, esfera));
@@ -34,11 +35,7 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
 
   const refreshCardStates = () => {
     const count = list.querySelectorAll(".option-card.selected").length;
-    const atLimit = count >= MAX_SELECTIONS;
-    list.querySelectorAll(".option-card").forEach((c) => {
-      c.classList.toggle("disabled-limit", atLimit && !c.classList.contains("selected"));
-    });
-    counter.textContent = `${count} de ${MAX_SELECTIONS} selecionadas`;
+    counter.textContent = `${count} de ${MAX_SELECTIONS} selecionado${MAX_SELECTIONS === 1 ? "" : "s"}`;
   };
 
   if (options.length === 0) {
@@ -57,6 +54,7 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
         class: `option-card${selected ? " selected" : ""}`,
         role: "button",
         tabindex: "0",
+        "data-numero": opt.numero,
       },
       [
         el("div", { class: "option-badge" }, letra),
@@ -89,14 +87,16 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
 
     const toggle = () => {
       const alreadySelected = card.classList.contains("selected");
-      const currentCount = list.querySelectorAll(".option-card.selected").length;
-      if (!alreadySelected && currentCount >= MAX_SELECTIONS) {
-        playDeselect();
-        card.classList.remove("shake");
-        void card.offsetWidth;
-        card.classList.add("shake");
-        trackEvent("limite_selecao_atingido", { esfera });
-        return;
+      // Ao atingir o limite, a nova escolha substitui a anterior.
+      if (!alreadySelected) {
+        const selecionados = [...list.querySelectorAll(".option-card.selected")];
+        if (selecionados.length >= MAX_SELECTIONS) {
+          const excedentes = selecionados.slice(0, selecionados.length - MAX_SELECTIONS + 1);
+          excedentes.forEach((c) => {
+            toggleAnswer(esfera, c.dataset.numero);
+            c.classList.remove("selected");
+          });
+        }
       }
       const nowSelected = toggleAnswer(esfera, opt.numero);
       card.classList.toggle("selected", nowSelected);
@@ -135,7 +135,7 @@ export function renderQuiz(container, { db, esfera, index, total, onNext, onBack
       el("h2", {}, esfera),
     ]),
     el("div", { class: "quiz-instruction-row" }, [
-      el("p", { class: "quiz-instruction" }, "Selecione até 3 planos que mais combinam com você."),
+      el("p", { class: "quiz-instruction" }, `Selecione ${MAX_SELECTIONS === 1 ? "o plano que mais combina" : `até ${MAX_SELECTIONS} planos que mais combinam`} com você.`),
       counter,
     ]),
     list,
