@@ -19,6 +19,7 @@ export function renderHome(container, { onStart }) {
         width: "128",
         height: "128",
       }),
+      el("p", { class: "home-banner" }, "🗳️ Vamos ajudar a decidir o 2º turno de forma consciente?"),
       el("h1", { class: "home-title" }, "Vamos descobrir qual candidato representa os seus valores?"),
       el("p", { class: "home-subtitle" }, "Selecione as ideias de plano de governo que mais lhe interessam e veja o resultado."),
     ]),

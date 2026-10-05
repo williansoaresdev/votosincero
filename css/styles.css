@@ -1131,3 +1131,15 @@ body.modal-open {
     padding: 13px 18px;
   }
 }
+
+.home-banner {
+  margin: 0 0 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--ink-100, #eef2ff);
+  color: var(--ink-700, #1e293b);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 40ch;
+}

@@ -70,6 +70,9 @@ function partidoExibicao(c) {
   return "Partido não informado no plano de governo";
 }
 
+// 2º turno: apenas Lula (13) e Flávio Bolsonaro (22) permanecem na disputa.
+const CANDIDATOS_SEGUNDO_TURNO = ["13", "22"];
+
 let cache = null;
 
 export async function loadDatabase() {
@@ -78,7 +81,9 @@ export async function loadDatabase() {
   if (!res.ok) throw new Error("Não foi possível carregar a base de planos de governo.");
   const raw = await res.json();
 
-  const candidatos = raw.candidatos.map((c) => ({
+  const candidatos = raw.candidatos
+    .filter((c) => CANDIDATOS_SEGUNDO_TURNO.includes(String(c.numero)))
+    .map((c) => ({
     numero: c.numero,
     nome: nomeExibicao(c),
     partido: partidoExibicao(c),

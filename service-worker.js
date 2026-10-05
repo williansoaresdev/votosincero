@@ -1,4 +1,4 @@
-const VERSION = "v9";
+const VERSION = "v10";
 const APP_SHELL_CACHE = `voto-sincero-shell-${VERSION}`;
 const RUNTIME_CACHE = `voto-sincero-runtime-${VERSION}`;
 
