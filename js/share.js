@@ -4,7 +4,7 @@
 
 const SHARE_TITLE = "Voto Sincero";
 const SHARE_TEXT =
-  "Fiz o teste cego do Voto Sincero e descobri quais candidatos mais combinam com meus valores. Faça o seu também:";
+  "O que o governo prometeu está saindo do papel? Acompanhe o andamento do plano de governo 2027–2030, com fontes:";
 
 function appUrl() {
   return `${location.origin}${location.pathname}`;

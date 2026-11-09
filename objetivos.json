@@ -1,0 +1,2638 @@
+{
+  "versao": 1,
+  "atualizado_em": "2026-11-09",
+  "governo": {
+    "nome": "Governo Lula (candidato 13)",
+    "mandato_inicio": "2027-01-01",
+    "mandato_fim": "2030-12-31",
+    "plano_pdf": "src/assets/planos_pdf/13_LULA.pdf"
+  },
+  "objetivos": [
+    {
+      "id": "edu-alfabetizacao",
+      "esfera": "Educação",
+      "titulo": "Alfabetização na idade certa",
+      "descricao": "Chegar a 80% das crianças alfabetizadas na idade certa, mantendo o Compromisso Nacional Criança Alfabetizada com estados e municípios.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 31,
+      "linha_de_base": "66% das crianças alfabetizadas na idade certa em 2025 (dado declarado no plano).",
+      "indicador": {
+        "unidade": "%",
+        "base": 66,
+        "meta": 80,
+        "casas": 0
+      },
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 31",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=31",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Indicador Criança Alfabetizada de 2025: 66% das crianças alfabetizadas na idade certa, acima da meta de 64% para o ano (em 2024 foram 59,2%). A Lei 15.247, de 31/10/2025, dá base legal ao compromisso. É o mesmo valor que o plano usa como ponto de partida; não há medição posterior a 2025.",
+          "fontes": [
+            {
+              "titulo": "Brasil atinge meta com 66% das crianças alfabetizadas em idade certa (InfoMoney)",
+              "url": "https://www.infomoney.com.br/?p=3263581",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Brasil alcança 66% de alfabetização na idade certa, diz MEC (Educa Mais Brasil)",
+              "url": "https://www.educamaisbrasil.com.br/educacao/noticias/brasil-alcanca-66-de-alfabetizacao-na-idade-certa-diz-mec",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Lei 15.247/2025 — Compromisso Nacional Criança Alfabetizada (MEC)",
+              "url": "https://www.gov.br/mec/pt-br/crianca-alfabetizada/pdf/2555_L15247.pdf",
+              "tipo": "oficial",
+              "data": "2025-10-31"
+            }
+          ],
+          "valor": 66
+        }
+      ]
+    },
+    {
+      "id": "edu-tempo-integral",
+      "esfera": "Educação",
+      "titulo": "Ampliar a educação em tempo integral",
+      "descricao": "Dar \"absoluta prioridade\" ao fomento do tempo integral, com o financiamento incluído no Fundeb a partir de 2026.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 31,
+      "linha_de_base": "1,8 milhão de novas matrículas entre 2023 e 2025 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 31",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=31",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Censo Escolar 2025 (divulgado em 26/02/2026) registra 46 milhões de matrículas na educação básica, 10,1 milhões delas em tempo integral. O MEC indica 25,8% das matrículas públicas em tempo integral em 2025, o que atinge a meta de 25% do PNE anterior, mas deixa cerca de 74% dos alunos fora. Desde 2026, ao menos 4% do Fundeb deve ser aplicado na criação de matrículas em tempo integral (EC 135/2024; Resolução CIF 23/2026), mas o MEC lembra que não é recurso novo, e sim redirecionado. A medição de 2026 só sai com o Censo Escolar de 2026.",
+          "fontes": [
+            {
+              "titulo": "Brasil tem menor número de alunos em ensino médio em uma década, mas cresce na educação integral (Diário de Pernambuco)",
+              "url": "https://www.diariodepernambuco.com.br/brasil/2026/02/11708589-brasil-tem-menor-n-de-alunos-em-ensino-medio-em-uma-decada-mas-cresce-na-educacao-integral.html",
+              "tipo": "imprensa",
+              "data": "2026-02-26"
+            },
+            {
+              "titulo": "Guia da Resolução CIF nº 23/2026 — Escola em Tempo Integral (MEC)",
+              "url": "https://www.gov.br/mec/pt-br/escola-em-tempo-integral/documentos-arquivos/GuiaResoluoCIF232026_vfinal.pdf",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Conheça o perfil dos 46 milhões de estudantes da educação básica (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202608/conheca-o-perfil-dos-46-milhoes-de-estudantes-da-educacao-basica-no-dia-do-estudante",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edu-internet-escolas",
+      "esfera": "Educação",
+      "titulo": "Internet de qualidade em todas as escolas",
+      "descricao": "Universalizar a conectividade adequada nas escolas públicas.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 32,
+      "linha_de_base": "75% das escolas com conectividade adequada (declarado no plano).",
+      "indicador": {
+        "unidade": "%",
+        "base": 75,
+        "meta": 100,
+        "casas": 1
+      },
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 32",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=32",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Painel de Monitoramento do MEC (dados de julho/2026): 108.658 das 138.086 escolas públicas monitoradas (78,7%) têm conectividade adequada; a meta do MEC é conectar todas até o fim de 2026. O plano cita 75%, mas o painel indicava 70% em janeiro: os critérios e datas diferem. O Censo Escolar 2025 aponta 93,1% com internet, mas mede acesso, não qualidade.",
+          "fontes": [
+            {
+              "titulo": "Painel do MEC mostra dados de conectividade de 138 mil escolas públicas (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202609/painel-do-mec-mostra-dados-de-conectividade-de-138-mil-escolas-publicas",
+              "tipo": "oficial",
+              "data": "2026-09-02"
+            },
+            {
+              "titulo": "Brasil: 79,7% das escolas públicas têm internet com velocidade adequada (O Liberal)",
+              "url": "https://www.oliberal.com/brasil/brasil-79-7-das-escolas-publicas-tem-internet-com-velocidade-adequada-1.1164187",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "70% das escolas públicas têm conectividade adequada (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202601/70-das-escolas-publicas-tem-conectividade-adequada",
+              "tipo": "oficial"
+            }
+          ],
+          "valor": 78.7
+        }
+      ]
+    },
+    {
+      "id": "edu-pe-de-meia",
+      "esfera": "Educação",
+      "titulo": "Manter e fortalecer o Pé-de-Meia",
+      "descricao": "Continuar o incentivo financeiro para permanência de jovens pobres no ensino médio.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 32,
+      "linha_de_base": "7,3 milhões de jovens beneficiados até 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 32",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=32",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "mantido",
+          "resumo": "O programa segue ativo em 2026: já alcançou 7,2 milhões de estudantes desde 2024, cerca de 3,6 milhões receberão o incentivo-matrícula de 2026 e as parcelas de frequência (R$ 200, até nove por ano) estão sendo pagas (a sétima começou em outubro). O \"fortalecimento\" prometido não foi confirmado: não foi encontrado valor de orçamento do programa para 2026 ou 2027.",
+          "fontes": [
+            {
+              "titulo": "Pé-de-Meia: pagamento da sétima parcela começa nesta segunda (Folha de Pernambuco)",
+              "url": "https://www.folhape.com.br/economia/pe-de-meia-pagamento-da-setima-parcela-comeca-nesta-segunda/519219/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Pagamento do Pé-de-Meia 2026 (Correio da Manhã)",
+              "url": "https://www.correiodamanha.com.br/especiais/2026/05/289328-pagamento-do-pe-de-meia-2026.html",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edu-pne",
+      "esfera": "Educação",
+      "titulo": "Cumprir as metas do Plano Nacional de Educação 2026-2036",
+      "descricao": "Orientar a ação federal pelas metas do novo PNE, incluindo expansão de creches via Novo PAC.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 31,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 31",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=31",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O novo Plano Nacional de Educação foi sancionado em 14/04/2026 sem vetos (Lei 15.388/2026), com vigência até 2036: 19 objetivos, 73 metas e 372 estratégias. Entre as metas, elevar o investimento público em educação a 7,5% do PIB e chegar a 10% ao fim da década. O cumprimento das metas ainda não pode ser medido.",
+          "fontes": [
+            {
+              "titulo": "Lei nº 15.388, de 14 de abril de 2026 (Planalto)",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15388.htm",
+              "tipo": "oficial",
+              "data": "2026-04-14"
+            },
+            {
+              "titulo": "Câmara publica infográfico com resumo do Plano Nacional de Educação (Câmara dos Deputados)",
+              "url": "https://www2.camara.leg.br/comunicacao/assessoria-de-imprensa/releases/14-04-26-camara-publica-infografico-com-resumo-do-plano-nacional-de-educacao",
+              "tipo": "oficial",
+              "data": "2026-04-14"
+            },
+            {
+              "titulo": "Lula sanciona novo Plano Nacional de Educação com vigência até 2036 (Congresso em Foco)",
+              "url": "https://www.congressoemfoco.com.br/noticia/118096/lula-sanciona-novo-plano-nacional-de-educacao-com-vigencia-ate-2036",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edu-campi-ita-indigena",
+      "esfera": "Educação",
+      "titulo": "Concluir novos campi, ITA no Ceará e universidades Indígena e do Esporte",
+      "descricao": "Concluir obras em curso, inclusive novos campi, a nova unidade do ITA e as universidades Indígena e do Esporte.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 33,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 33",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=33",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Universidade Federal Indígena (Unind) foi criada pela Lei 15.418, de 28/05/2026, com sede em Brasília e início das atividades previsto para 2027, com dez cursos. A nova unidade do ITA no Ceará, a Universidade do Esporte e os novos campi não foram apurados.",
+          "fontes": [
+            {
+              "titulo": "Lei nº 15.418, de 28 de maio de 2026 (Planalto)",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15418.htm",
+              "tipo": "oficial",
+              "data": "2026-05-28"
+            },
+            {
+              "titulo": "Universidade Federal Indígena é criada com sede em Brasília (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/05/29/universidade-federal-indigena-e-criada-com-sede-em-brasilia",
+              "tipo": "oficial",
+              "data": "2026-05-29"
+            },
+            {
+              "titulo": "Lula sanciona lei que cria a primeira Universidade Federal Indígena, com início previsto para 2027 (Jornal Grande Bahia)",
+              "url": "https://jornalgrandebahia.com.br/2026/05/presidente-lula-sanciona-lei-que-cria-a-primeira-universidade-federal-indigena-do-brasil-com-inicio-previsto-para-2027/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eco-juros",
+      "esfera": "Economia",
+      "titulo": "Redução sustentada dos juros",
+      "descricao": "Criar condições para queda sustentada da taxa de juros, com inflação controlada e política fiscal responsável.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 49,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 49",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=49",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Selic caiu de 15% para 13,75% ao ano em cinco cortes seguidos em 2026 (o último em setembro, de 14% para 13,75%). Na primeira reunião após a eleição, em 04/11/2026, o Copom manteve a taxa, contrariando a expectativa de corte, citando câmbio e El Niño. A taxa segue alta e a queda \"sustentada\" ainda não está consolidada.",
+          "fontes": [
+            {
+              "titulo": "Banco Central decide manter Selic em 13,75% e surpreende mercado (Movimento Econômico)",
+              "url": "https://movimentoeconomico.com.br/economia/2026/11/04/banco-central-decide-manter-selic-em-1375-e-surpreende-mercado-financeiro/",
+              "tipo": "imprensa",
+              "data": "2026-11-04"
+            },
+            {
+              "titulo": "Copom reduz Selic para 13,75%, sem antecipar os novos passos (JB)",
+              "url": "https://www.jb.com.br/economia/2026/09/amp/1060935-copom-reduz-selic-para-1375-sem-antecipar-os-novos-passos.html",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Selic: Banco Central mantém juros básicos em 13,75% ao ano (Diário de Pernambuco)",
+              "url": "https://www.diariodepernambuco.com.br/economia/2026/11/11728373-selic-banco-central-mantem-juros-basicos-em-1375-ao-ano.html",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eco-arcabouco",
+      "esfera": "Economia",
+      "titulo": "Manter o novo arcabouço fiscal",
+      "descricao": "Preservar as regras do arcabouço fiscal vigente como âncora da política fiscal.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 49,
+      "linha_de_base": "Déficit primário projetado perto de 0,4% do PIB em 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 49",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=49",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "mantido",
+          "resumo": "O arcabouço fiscal segue em vigor, mas o cumprimento das metas está em dúvida. O Tesouro afirmou, em relatório de data não confirmada, que sem novas medidas de arrecadação as metas de 2026 a 2028 não serão cumpridas. O orçamento de 2027 prevê superávit primário de R$ 83,4 bi, mas só R$ 18,6 bi (0,13% do PIB) na métrica da meta; o mercado projeta resultado R$ 27 bi abaixo do piso. O plano cita déficit de cerca de 0,4% do PIB em 2026, número não verificado.",
+          "fontes": [
+            {
+              "titulo": "Governo e mercado divergem em R$ 73 bi sobre resultado de 2027 (Poder360)",
+              "url": "https://www.poder360.com.br/poder-economia/governo-e-mercado-divergem-em-r-73-bi-sobre-resultado-de-2027/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Sem esforço de arrecadação, meta fiscal de 2026 a 2028 será descumprida, diz Tesouro (InfoMoney)",
+              "url": "https://www.infomoney.com.br/?p=2705207",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Orçamento de 2027 tem estimativa de superávit de R$ 83,4 bilhões (Diário de Pernambuco)",
+              "url": "https://www.diariodepernambuco.com.br/economia/2026/08/11722740-orcamento-de-2027-tem-estimativa-de-superavit-de-rs-834-bilhoes.html",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eco-neoindustrializacao",
+      "esfera": "Economia",
+      "titulo": "Neoindustrialização: IA, minerais críticos e inovação",
+      "descricao": "Fortalecer a Nova Indústria Brasil, com foco em inovação, inteligência artificial e minerais críticos.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 47,
+      "linha_de_base": "R$ 860 bilhões em financiamentos via Plano Mais Produção entre 2023 e 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 47",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=47",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O governo anunciou mais R$ 140 bilhões para a Nova Indústria Brasil até dezembro de 2026 (R$ 102,5 bi do BNDES e R$ 37,5 bi da Finep). Em minerais críticos, o BNDES diz que pretende investir até R$ 50 bi e analisa 56 projetos (maio/2026). O painel do Plano Mais Produção soma R$ 516 bi em financiamentos, mas aprovação e desembolso não são comparáveis; o número do plano (R$ 860 bi até 2026) não foi verificado.",
+          "fontes": [
+            {
+              "titulo": "Nova Indústria Brasil ganha mais R$ 140 bilhões para investimento até dezembro de 2026 (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202606/nova-industria-brasil-ganha-mais-r-140-bilhoes-para-investimento-ate-dezembro-de-2026",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "BNDES vai investir R$ 50 bilhões em projetos de minerais críticos (Agência Brasil)",
+              "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-05/bndes-vai-investir-r-50-bilhoes-em-projetos-de-minerais-criticos",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Plano Mais Produção injeta R$ 516 bi em 258 mil projetos (Itatiaia)",
+              "url": "https://www.itatiaia.com.br/economia/negocios/industria/neoindustrializacao-plano-mais-producao-injeta-r-516-bi-em-258-mil-projetos/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eco-novo-pac",
+      "esfera": "Economia",
+      "titulo": "Segunda edição do Novo PAC e novas concessões",
+      "descricao": "Manter o ciclo de investimentos em infraestrutura e a política de concessões e arrendamentos portuários.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 54,
+      "linha_de_base": "Investimento em infraestrutura de R$ 280 bilhões em 2025 e previsão de R$ 300 bilhões em 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 54",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=54",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O orçamento de 2027 (projeto) prevê R$ 133,8 bilhões em investimentos federais, 20,8% acima dos R$ 110,8 bilhões de 2026, dos quais R$ 61,5 bilhões no Novo PAC. Não foi confirmado o lançamento formal de uma segunda edição do Novo PAC nem novas concessões; a busca só retornou o lançamento original (2023).",
+          "fontes": [
+            {
+              "titulo": "Orçamento de 2027 prevê R$ 133,8 bilhões em investimentos públicos (JB)",
+              "url": "https://www.jb.com.br/economia/2026/09/1060773-orcamento-de-2027-preve-rs-1338-bilhoes-em-investimentos-publicos.html",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo Lula prevê R$ 133,8 bilhões em investimentos no orçamento de 2027 (Brasil de Fato)",
+              "url": "https://www.brasildefato.com.br/2026/09/01/governo-lula-preve-r-1338-bilhoes-em-investimentos-no-orcamento-de-2027/",
+              "tipo": "imprensa",
+              "data": "2026-09-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-filas",
+      "esfera": "Saúde",
+      "titulo": "Reduzir filas na atenção especializada",
+      "descricao": "Dar sequência ao programa Agora Tem Especialistas e à redução das filas de consultas, exames e cirurgias.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 37,
+      "linha_de_base": "15 milhões de cirurgias, 31,4 milhões de consultas e 45 milhões de exames em 2025 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 37",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=37",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Balanço do Ministério da Saúde: 7,5 milhões de cirurgias eletivas no 1º semestre de 2026 (projeção de mais de 15 milhões no ano; 2025 ficou perto de 14,9 milhões) e mais de 170 filas zeradas em 88 municípios. O TCU (jul/2026) concluiu que o programa ampliou atendimentos, mas não demonstrou redução consistente das esperas, e que falta uma base nacional para acompanhar o percurso do paciente.",
+          "fontes": [
+            {
+              "titulo": "SUS realiza 7,5 milhões de cirurgias eletivas no 1º semestre (JB)",
+              "url": "https://www.jb.com.br/bem-viver/saude/2026/09/1060922-sus-realiza-75-milhoes-de-cirurgias-eletivas-no-1-semestre.html",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "TCU avalia programa Agora Tem Especialistas do Ministério da Saúde (TCU)",
+              "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-avalia-programa-agora-tem-especialistas-do-ministerio-da-saude",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Programa de Lula amplia atendimentos, mas 1/4 dos pacientes enfrenta espera maior, diz TCU (Jornal de Brasília)",
+              "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/programa-de-lula-amplia-atendimentos-mas-1-4-dos-pacientes-enfrenta-espera-maior-diz-tcu/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-farmacia-popular",
+      "esfera": "Saúde",
+      "titulo": "Farmácia Popular 100% gratuita",
+      "descricao": "Manter o programa gratuito, revisar periodicamente os medicamentos ofertados e ampliar locais de retirada nas periferias.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 36,
+      "linha_de_base": "41 medicamentos gratuitos e 27,3 milhões de pessoas atendidas em 2025 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 36",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=36",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "mantido",
+          "resumo": "O programa segue com 41 itens gratuitos (medicamentos, fraldas geriátricas e absorventes). O Conselho Federal de Farmácia cita mais de 24 milhões de pessoas atendidas em 2026 (a Agência Gov falava em 23 milhões em agosto). O Ministério da Saúde moderniza os sistemas e estuda incluir exames. Ampliação de pontos de retirada nas periferias não foi apurada.",
+          "fontes": [
+            {
+              "titulo": "Farmácia Popular amplia acesso e reforça papel do farmacêutico (Conselho Federal de Farmácia)",
+              "url": "https://site.cff.org.br/noticia/Noticias-gerais/24/09/2026/farmacia-popular-amplia-acesso-e-reforca-papel-do-farmaceutico",
+              "tipo": "imprensa",
+              "data": "2026-09-24"
+            },
+            {
+              "titulo": "Ministério da Saúde moderniza sistemas do Farmácia Popular e estuda inclusão de exames (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202608/ministerio-da-saude-moderniza-sistemas-do-farmacia-popular-e-estuda-inclusao-de-exames",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Farmácia Popular entrega 41 medicamentos e itens de graça (Estado de Minas)",
+              "url": "https://www.em.com.br/emfoco/2026/08/04/farmacia-popular-entrega-41-medicamentos-e-itens-de-graca-para-toda-a-populacao-veja-o-que-levar/",
+              "tipo": "imprensa",
+              "data": "2026-08-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-bucal",
+      "esfera": "Saúde",
+      "titulo": "Universalizar a saúde bucal",
+      "descricao": "Apoiar municípios para universalizar a oferta de saúde bucal, conforme lei aprovada no atual mandato.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 36,
+      "linha_de_base": "Quase 35 mil equipes de saúde bucal em 5.208 municípios (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 36",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=36",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "As equipes de saúde bucal subiram de 28,2 mil (2022) para 34,5 mil (2025), segundo cartilha do Ministério da Saúde; não há número de 2026. O projeto Criança Sorridente foi lançado em fevereiro/2026 e a Lei 14.572/2023 garante a continuidade da política. A universalização da oferta nos municípios não foi verificada.",
+          "fontes": [
+            {
+              "titulo": "Três anos de entregas para fortalecer o SUS (Ministério da Saúde)",
+              "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/cartilhas/2025/tres-anos-de-entregas-para-fortalecer-o-sus/@@download/file",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Ministério da Saúde abre inscrições para Mostra Nacional de Saúde Bucal (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202610/ministerio-da-saude-abre-inscricoes-para-mostra-nacional-de-saude-bucal-2013-brasil-sorridente-1",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Nota Técnica nº 34/2026 — Coordenação de Saúde Bucal (Ministério da Saúde)",
+              "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-34-2026-cgsb-desf-saps-ms.pdf",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-vacinacao",
+      "esfera": "Saúde",
+      "titulo": "Manter a alta cobertura vacinal",
+      "descricao": "Sustentar a recuperação das coberturas vacinais, em especial as infantis.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 36,
+      "linha_de_base": "Cobertura ampliada em 15 das 16 principais vacinas infantis (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 36",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=36",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Segundo o Ministério da Saúde, todas as vacinas do calendário infantil tiveram cobertura maior em 2025 do que em 2022, e a OMS e o Unicef reconhecem a recuperação. Porém, dados preliminares indicam que só a BCG (96,8%) e a hepatite B neonatal atingiram a meta de 95% em 2025, e a vacinação infantil contra a pólio caiu pelo segundo ano seguido, sem nenhuma região na meta. Campanha de multivacinação em andamento (3/8 a 1/9/2026).",
+          "fontes": [
+            {
+              "titulo": "OMS e Unicef destacam avanço do Brasil em vacinação (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202607/oms-e-unicef-destacam-avanco-do-brasil-em-vacinacao",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Vacinação infantil contra pólio cai e nenhuma região do Brasil bate a meta (Band)",
+              "url": "https://www.band.com.br/saude/vacinacao-infantil-contra-polio-cai-88-e-nenhuma-regiao-do-brasil-bate-a-meta",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Campanha de multivacinação 2026 já começou (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202608/campanha-de-multivacinacao-2026-ja-comecou-e-segue-ate-1o-de-setembro-dia-d-sera-em-22-de-agosto",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-hospitais-universitarios",
+      "esfera": "Saúde",
+      "titulo": "Novos hospitais universitários",
+      "descricao": "Avançar na implantação de novos hospitais universitários e articulá-los ao Agora Tem Especialistas.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 34,
+      "linha_de_base": "13 novos hospitais universitários criados no atual mandato (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 34",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=34",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Ebserh virou HU Brasil em março/2026. O Hospital Universitário da UFCAT (Catalão, GO) foi inaugurado em 02/06/2026 e o da UFSJ (MG) está previsto até o fim do ano, o que levaria a rede a 47 hospitais. O presidente afirmou que a meta é chegar a 60 hospitais universitários ao fim do governo.",
+          "fontes": [
+            {
+              "titulo": "Lula inaugura hospital universitário da Universidade Federal de Catalão (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202606/lula-inaugura-hospital-universitario-da-universidade-federal-de-catalao-201ca-educacao-e-para-todos201d",
+              "tipo": "oficial",
+              "data": "2026-06-02"
+            },
+            {
+              "titulo": "Ebserh agora é HU Brasil (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202603/ebserh-agora-e-hubrasil",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Carta Anual de Governança e Políticas Públicas 2026 (HU Brasil)",
+              "url": "https://www.gov.br/hubrasil/pt-br/transparencia/CartaAnualdeGovernanaePolticasPblicas2026.pdf",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-ceis",
+      "esfera": "Saúde",
+      "titulo": "Soberania sanitária: produção nacional de insumos",
+      "descricao": "Fomentar o Complexo Econômico e Industrial da Saúde, com produção nacional de insulina, hemoderivados e outros insumos.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 39,
+      "linha_de_base": "31 parcerias para desenvolvimento produtivo desde 2024 e fábrica da Hemobrás concluída (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 39",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=39",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A produção nacional de insulina foi retomada em 2025 por Parceria de Desenvolvimento Produtivo (Bio-Manguinhos/Fiocruz, Biomm e Gan & Lee), com primeiros lotes entregues ao SUS. A previsão é chegar ao fim de 2026 com capacidade de até 36 milhões de tubetes. Uma análise de maio/2026 lembra que ainda falta atender toda a demanda do SUS. Produção de hemoderivados (Hemobrás) não foi apurada.",
+          "fontes": [
+            {
+              "titulo": "Brasil recebe primeiro lote de insulina produzida no país após 20 anos (Jornal Opção)",
+              "url": "https://www.jornalopcao.com.br/ultimas-noticias/brasil-recebe-primeiro-lote-de-insulina-produzida-no-pais-apos-20-anos-724917/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Ministro da Saúde recebe 2,1 milhões de unidades de insulina glargina com tecnologia nacional (ICTQ)",
+              "url": "https://ictq.com.br/industria-farmaceutica/4705-ministro-da-saude-recebe-2-1-milhoes-de-unidades-de-insulina-glargina-produzidas-com-tecnologia-nacional",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo acerta com empresa chinesa para produção de insulina no Brasil (Agência Brasil)",
+              "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2025-10/governo-acerta-com-empresa-chinesa-para-producao-de-insulina-no-brasil",
+              "tipo": "oficial",
+              "data": "2025-10-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-digital",
+      "esfera": "Saúde",
+      "titulo": "Saúde digital e teleconsultas",
+      "descricao": "Intensificar o uso de teleconsulta, teleorientação e teleacolhimento na atenção básica.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 35,
+      "linha_de_base": "5.257 kits de teleconsulta entregues (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 35",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=35",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Ministério da Saúde e o Ministério das Comunicações lançaram, em maio/2026, editais de conectividade para UBS (R$ 104 mi para até 3,8 mil unidades, segundo uma fonte; outra cita 38 mil) e, em junho, avançaram para conectar 1.983 unidades pelo Novo PAC Saúde. O ministro Padilha prevê 100% de cobertura de teleatendimento em quatro anos e cita 6 a 12 milhões de teleatendimentos (os números divergem). A Portaria 4.160 paga R$ 15 mil por ponto de telessaúde (cerca de 1.100 pontos).",
+          "fontes": [
+            {
+              "titulo": "Ministério da Saúde avança para levar conectividade a 1.983 unidades de saúde (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202606/ministerio-da-saude-avanca-para-levar-conectividade-a-1-983-unidades-de-saude",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Governo quer levar telessaúde a 100% das unidades do SUS nos próximos 4 anos, afirma Padilha (Tribuna do Sertão)",
+              "url": "https://tribunadosertao.com.br/geral/2026/09/03/973011-governo-quer-levar-telessaude-a-100-das-unidades-do-sus-nos-proximos-4-anos-afirma-padilha",
+              "tipo": "imprensa",
+              "data": "2026-09-03"
+            },
+            {
+              "titulo": "Governo lança editais para conectar até 38 mil UBS (IstoÉ Dinheiro)",
+              "url": "https://istoedinheiro.com.br/governo-lanca-editais-para-conectar-ate-38-mil-ubs",
+              "tipo": "imprensa",
+              "data": "2026-05-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-mental",
+      "esfera": "Saúde",
+      "titulo": "Ampliar a rede de saúde mental (CAPS)",
+      "descricao": "Ampliar investimentos na Rede de Atenção Psicossocial, com foco em crianças, adolescentes e jovens.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 39,
+      "linha_de_base": "336 novos CAPS estruturados com o Novo PAC (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 39",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=39",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Em 23/07/2026, duas portarias do Ministério da Saúde (12.023 e 12.024) habilitaram 12 CAPS cada, com custeio federal (a de nº 12.024 prevê R$ 8,8 mi/ano), e o Novo PAC Seleções prevê a construção de mais 100 CAPS. Há obras e expansão em estados (CE, PR, DF), mas não foi encontrado total nacional de 2026. Atenção a TEA e a jogos de apostas, também prometidas, não foi apurada.",
+          "fontes": [
+            {
+              "titulo": "Ministério da Saúde habilita 12 CAPS e autoriza repasse (Atlas Público)",
+              "url": "https://atlaspublico.com.br/noticias/ministerio-da-saude-habilita-12-caps-e-autoriza-repasse-75537",
+              "tipo": "imprensa",
+              "data": "2026-07-23"
+            },
+            {
+              "titulo": "De CAPS a postos de saúde, Ceará terá 24 novas unidades de atendimento (Diário do Nordeste)",
+              "url": "https://diariodonordeste.verdesmares.com.br/ceara/de-caps-a-postos-de-saude-ceara-tera-24-novas-unidades-de-atendimento-veja-locais-1.3759560",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Ministra Nísia Trindade anuncia nova fase do PAC com quase R$ 6 bilhões (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202502/ministra-nisia-trindade-anuncia-nova-fase-do-pac-com-quase-r-6-bilhoes-em-investimentos",
+              "tipo": "oficial",
+              "data": "2025-02-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seg-pec",
+      "esfera": "Segurança",
+      "titulo": "PEC da Segurança Pública",
+      "descricao": "Aprovar no Congresso a emenda constitucional que revisa as atribuições dos entes federados na segurança pública.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 27,
+      "linha_de_base": "PEC enviada ao Congresso Nacional (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 27",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=27",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "PEC 18/2025: aprovada na Câmara em março/2026 (461 a 14) e no Senado em 03/11/2026, em dois turnos (73 e 75 votos), sem a emenda da maioridade penal. O relator retirou a destinação de recursos das bets e manteve 10% do superávit do Fundo Soberano do Pré-Sal. Falta a promulgação pelas Mesas da Câmara e do Senado. Uma fonte (Estratégia Concursos) diz que o texto volta à Câmara, mas a maioria das fontes indica promulgação direta; confirmar no site do Senado.",
+          "fontes": [
+            {
+              "titulo": "Hugo Motta destaca aprovação da PEC da Segurança Pública pelo Senado (Câmara dos Deputados)",
+              "url": "https://www.camara.leg.br/noticias/1315533-hugo-motta-destaca-aprovacao-da-pec-da-seguranca-publica-pelo-senado",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "PEC 18/2025: tramitação (Senado Federal)",
+              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "PEC da Segurança Pública é aprovada no Senado sem redução da maioridade penal (O Tempo)",
+              "url": "https://www.otempo.com.br/politica/congresso/2026/11/3/pec-da-seguranca-publica-e-aprovada-no-senado-sem-reducao-da-maioridade-penal",
+              "tipo": "imprensa",
+              "data": "2026-11-03"
+            },
+            {
+              "titulo": "Câmara aprova PEC da Segurança; texto será analisado pelo Senado (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/03/05/camara-aprova-pec-da-seguranca-texto-sera-analisado-pelo-senado",
+              "tipo": "oficial",
+              "data": "2026-03-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seg-crime-organizado",
+      "esfera": "Segurança",
+      "titulo": "Programa Brasil Contra o Crime Organizado",
+      "descricao": "Fortalecer o programa lançado em maio de 2026, com asfixia financeira, combate ao tráfico de armas e retomada de territórios.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 27,
+      "linha_de_base": "Programa prevê R$ 10 bilhões do FIIS; Lei Antifacção sancionada em 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 27",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=27",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Lei Antifacção (Lei 15.358/2026) foi sancionada em 24/03/2026, com dois vetos, e o programa Brasil Contra o Crime Organizado foi lançado em 12/05/2026 por decreto e quatro portarias. A imprensa cita R$ 11,1 bilhões; o plano fala em R$ 10 bilhões do FIIS. Ainda falta apurar execução: repasses, operações e resultados.",
+          "fontes": [
+            {
+              "titulo": "Lei Antifacção, de combate ao crime organizado, entra em vigor (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/03/25/lei-antifaccao-de-combate-ao-crime-organizado-entra-em-vigor",
+              "tipo": "oficial",
+              "data": "2026-03-25"
+            },
+            {
+              "titulo": "Lula sanciona PL Antifacção com vetos; entenda como ficou (Poder360)",
+              "url": "https://www.poder360.com.br/brasil/lula-sanciona-pl-antifaccao-com-veto-e-sem-alcolumbre-no-planalto/",
+              "tipo": "imprensa",
+              "data": "2026-03-24"
+            },
+            {
+              "titulo": "Lula launches R$11 billion plan to asphyxiate Brazil's crime factions (Rio Times)",
+              "url": "https://www.riotimesonline.com/lula-launches-r11-billion-plan-to-asphyxiate-brazils-crime-factions/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seg-pacto-execucao-penal",
+      "esfera": "Segurança",
+      "titulo": "Pacto Nacional de Execução Penal",
+      "descricao": "Instituir o pacto para enfrentar o crime organizado no sistema prisional e cumprir as metas do Plano Pena Justa.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 28,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 28",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=28",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Não foi encontrado nenhum \"Pacto Nacional de Execução Penal\". A frente existente é o Plano Pena Justa, homologado pelo STF em fevereiro/2025, coordenado por CNJ e Senappen, com 307 metas até 2027 e planos estaduais já homologados; o CNJ divulgou o primeiro monitoramento nacional, com \"avanços e desafios\". Ou seja, o cumprimento das metas do Pena Justa avança, mas o pacto novo prometido ainda não existe.",
+          "fontes": [
+            {
+              "titulo": "Pena Justa: primeiro monitoramento nacional aponta avanços e desafios (CNJ)",
+              "url": "https://www.cnj.jus.br/pena-justa-primeiro-monitoramento-nacional-aponta-avancos-e-desafios/",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "O que você precisa saber sobre o Pena Justa (CNJ)",
+              "url": "https://www.cnj.jus.br/sistema-carcerario/plano-pena-justa/perguntas-frequentes-sobre-o-pena-justa/",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Supremo homologa planos estaduais contra violações de direitos no sistema prisional (STF)",
+              "url": "https://noticias.stf.jus.br/?p=166071",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seg-ficcos",
+      "esfera": "Segurança",
+      "titulo": "Ampliar as Forças Integradas de Combate ao Crime Organizado (FICCOs)",
+      "descricao": "Ampliar as FICCOs e consolidá-las como política de Estado, inclusive na Amazônia Legal.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 28,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 28",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=28",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "As FICCOs seguem em operação: a Operação Força Integrada IV (16/09/2026) mobilizou 20 bases em 19 estados, com 137 prisões segundo uma fonte (outra cita 106 mandados). Em abril, a PF instalou duas novas bases em São Paulo (Baixada Santista e Paulínia). O programa federal de maio/2026 prevê fortalecê-las; não foi encontrada ampliação nacional formal.",
+          "fontes": [
+            {
+              "titulo": "Operação Força Integrada IV mobiliza FICCOs em 19 estados (Itatiaia)",
+              "url": "https://www.itatiaia.com.br/politica/operacao-forca-integrada-iv-mobiliza-ficcos-em-19-estados/",
+              "tipo": "imprensa",
+              "data": "2026-09-16"
+            },
+            {
+              "titulo": "FICCOs deflagram Operação Força Integrada III em 14 estados (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202607/ficcos-deflagram-operacao-forca-integrada-iii-em-14-estados",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "PF instala novas bases contra crime organizado na Baixada Santista e em Paulínia (O Cafezinho)",
+              "url": "https://www.ocafezinho.com/2026/04/15/pf-instala-novas-bases-contra-crime-organizado-na-baixada-santista-e-em-paulinia/amp/",
+              "tipo": "imprensa",
+              "data": "2026-04-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seg-celular-seguro",
+      "esfera": "Segurança",
+      "titulo": "Expandir o Celular Seguro",
+      "descricao": "Expandir e aprimorar o programa e combater as redes de receptação de aparelhos.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 29,
+      "linha_de_base": "Mais de 4 milhões de usuários cadastrados (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 29",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=29",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "mantido",
+          "resumo": "O Celular Seguro tinha cerca de 3,8 milhões de usuários cadastrados em fevereiro/2026 (outra fonte cita 3,73 milhões), abaixo dos \"mais de 4 milhões\" do plano; não há dado posterior. A expansão e o combate às redes de receptação não foram apurados.",
+          "fontes": [
+            {
+              "titulo": "Celular Seguro tem aumento no número de bloqueios no Carnaval (Olhar Digital)",
+              "url": "https://olhardigital.com.br/2026/02/18/pro/celular-seguro-tem-aumento-no-numero-de-bloqueios-no-carnaval/",
+              "tipo": "imprensa",
+              "data": "2026-02-18"
+            },
+            {
+              "titulo": "Celular Seguro reforça proteção contra roubos no Carnaval (Jornal de Brasília)",
+              "url": "https://jornaldebrasilia.com.br/noticias/brasil/celular-seguro-reforca-protecao-contra-roubos-no-carnaval/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Saiba como emitir alerta do aplicativo Celular Seguro (Band)",
+              "url": "https://www.band.com.br/ciencia-e-tecnologia/saiba-como-emitir-alerta-do-aplicativo-celular-seguro-em-caso-de-roubo",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transp-mobilidade-urbana",
+      "esfera": "Transporte",
+      "titulo": "Metrôs, trens, VLTs e BRTs",
+      "descricao": "Entregar a carteira do Novo PAC: mais 233 km de metrôs, trens e VLTs e 296 km de corredores BRT.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 46,
+      "linha_de_base": "Carteira contratada somando 233 km sobre trilhos e 296 km de BRT (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 46",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=46",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Só foram encontradas habilitações e enquadramentos, não entregas: em agosto/2026 o Ministério das Cidades habilitou R$ 1,25 bi para estender a Linha 4-Amarela do metrô de SP até Taboão da Serra, e uma portaria abriu caminho para trocar parte do BRT do Rio por VLT. Nenhuma entrega de quilômetros de metrô, trem, VLT ou BRT foi confirmada.",
+          "fontes": [
+            {
+              "titulo": "Ministério das Cidades habilita R$ 1,92 bilhão para extensão da Linha 4-Amarela e ônibus elétricos (Diário do Transporte)",
+              "url": "https://diariodotransporte.com.br/2026/08/05/ministerio-das-cidades-habilita-r-192-bilhao-para-extensao-da-linha-4-amarela-onibus-eletricos-em-santana-do-parnaiba-contagem-e-canoas/",
+              "tipo": "imprensa",
+              "data": "2026-08-05"
+            },
+            {
+              "titulo": "Projeto do Rio para tornar corredores de BRT em vias para VLT será possível com Novo PAC (Diário do Transporte)",
+              "url": "https://diariodotransporte.com.br/2026/05/22/projeto-da-prefeitura-do-rio-de-janeiro-para-tornar-corredores-de-brt-em-vias-para-vlt-sera-possivel-com-novo-pac/",
+              "tipo": "imprensa",
+              "data": "2026-05-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transp-frota-onibus",
+      "esfera": "Transporte",
+      "titulo": "Renovar frota de ônibus",
+      "descricao": "Renovar frotas em 144 municípios: 3.942 ônibus Euro 6, 203 ônibus elétricos e 39 veículos sobre trilhos.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 46,
+      "linha_de_base": "Aquisições previstas na carteira atual do Novo PAC (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 46",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=46",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Em agosto/2026 o Ministério das Cidades habilitou projetos de renovação de frota em Santana de Parnaíba (54 ônibus elétricos e 10 carregadores), Contagem, Canoas, Teresina e Belo Horizonte, em pacote de cerca de R$ 1,92 bi (com a Linha 4-Amarela). Há queixas do setor sobre dificuldade de crédito para ônibus elétricos. Não há confirmação de ônibus entregues nem do total (3.942 Euro 6 e 203 elétricos).",
+          "fontes": [
+            {
+              "titulo": "Ministério das Cidades habilita R$ 1,92 bilhão para extensão da Linha 4-Amarela e ônibus elétricos (Diário do Transporte)",
+              "url": "https://diariodotransporte.com.br/2026/08/05/ministerio-das-cidades-habilita-r-192-bilhao-para-extensao-da-linha-4-amarela-onibus-eletricos-em-santana-do-parnaiba-contagem-e-canoas/",
+              "tipo": "imprensa",
+              "data": "2026-08-05"
+            },
+            {
+              "titulo": "Governo federal lança estudo nacional com 187 projetos de mobilidade (Diário do Transporte)",
+              "url": "https://diariodotransporte.com.br/2026/07/02/entrevistas-reportagem-especial-governo-federal-lanca-estudo-nacional-com-187-projetos-que-envolvem-r-430-bilhoes-e-66-mil-onibus-eletricos-e-3-mil-km-de-trilhos-e-brts/",
+              "tipo": "imprensa",
+              "data": "2026-07-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ma-desmatamento",
+      "esfera": "Meio Ambiente",
+      "titulo": "Desmatamento líquido zero até 2030",
+      "descricao": "Reafirmar a meta de desmatamento líquido zero, com os planos de controle e prevenção e o manejo integrado do fogo.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 70,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 70",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=70",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Prodes (ago/2025 a jul/2026): 3.335 km² desmatados na Amazônia, queda de 41,8% sobre o período anterior (5.731 km²) e a menor taxa da série, iniciada em 1988. No Cerrado, 5.516,69 km², também em queda. O Prodes mede desmatamento bruto; o saldo \"líquido zero\" (que desconta restauração) ainda não é apurado oficialmente.",
+          "fontes": [
+            {
+              "titulo": "Desmatamento cai na Amazônia e no Cerrado em 2026 (Poder360)",
+              "url": "https://www.poder360.com.br/poder-sustentavel/desmatamento-cai-na-amazonia-e-no-cerrado-em-2026/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Queda de 41,8%: Inpe detalha menor taxa de desmatamento da série histórica na Amazônia (Portal Amazônia)",
+              "url": "https://portalamazonia.com/meio-ambiente/queda-desmatamento-amazonia-inpe/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Prodes 2026 registra menor taxa da história (Greenpeace Brasil)",
+              "url": "https://www.greenpeace.org/brasil/imprensa/prodes-2026-registra-menor-taxa-da-historia-mas-futuro-da-meta-de-desmatamento-zero-depende-de-continuidade-e-vontade-politica-alerta-greenpeace/",
+              "tipo": "outro"
+            },
+            {
+              "titulo": "Desmatamento na Amazônia cai 36,87% no último ano — Deter (Agência Brasil)",
+              "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-08/desmatamento-na-amazonia-cai-3687-no-ultimo-ano",
+              "tipo": "oficial",
+              "data": "2026-08-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ma-ndc",
+      "esfera": "Meio Ambiente",
+      "titulo": "Cumprir a NDC: -59% a -67% das emissões até 2035",
+      "descricao": "Reduzir as emissões líquidas de gases de efeito estufa em 59% a 67% até 2035, em relação a 2005.",
+      "tipo": "meta",
+      "prazo": "2035",
+      "plano_pagina": 69,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 69",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=69",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Plano Clima 2024-2035, que implementa a NDC (corte de 59% a 67% das emissões líquidas até 2035, em relação a 2005), foi lançado em 16/03/2026, com 8 planos setoriais de mitigação, 16 de adaptação, 312 metas e mais de 800 ações. Não foram encontrados dados de emissões de 2026; o SEEG aponta que cerca de 42% das emissões brutas de 2024 vieram de mudança no uso da terra.",
+          "fontes": [
+            {
+              "titulo": "Governo lança Plano Clima com meta de reduzir emissões até 2035 (Alma Preta)",
+              "url": "https://almapreta.com.br/sessao/politica/governo-lanca-plano-clima-com-meta-de-reduzir-emissoes-ate-2035/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "O processo de construção da nova NDC brasileira (Ministério do Meio Ambiente)",
+              "url": "https://www.gov.br/mma/pt-br/centrais-de-conteudo/publicacoes/mudanca-do-clima/o-processo-de-construcao-da-nova-ndc-brasileira.pdf",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "O Plano Clima é consequência do compromisso do Brasil (IPAM)",
+              "url": "https://ipam.org.br/?p=43292",
+              "tipo": "outro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ma-terras-publicas",
+      "esfera": "Meio Ambiente",
+      "titulo": "Destinar terras públicas",
+      "descricao": "Avançar na destinação de terras públicas para unidades de conservação, territórios indígenas e quilombolas ou assentamentos.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 70,
+      "linha_de_base": "308 mil hectares incorporados a unidades de conservação no atual mandato (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 70",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=70",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Em 2026, decretos criaram ou ampliaram unidades de conservação: em março, o Parque Nacional Marinho do Albardão e a APA do Albardão (RS) e mais de 174 mil hectares em MT e MG; em junho, cerca de 100 mil hectares (Parque Nacional do Tanaru, em RO; APA do Paleocanal do Rio Tocantins, no PA; ampliações no Piauí). De 2023 a 2026 foram 13 UCs, cerca de 1,8 milhão de hectares. Destinação a territórios indígenas, quilombolas e assentamentos não foi apurada aqui.",
+          "fontes": [
+            {
+              "titulo": "Presidente Lula assina ampliação e criação de unidades de conservação: cerca de 100 mil hectares (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202606/presidente-lula-assina-ampliacao-e-criacao-de-unidades-de-conservacao-sao-cerca-de-100-mil-hectares-protegidos",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Governo avança na proteção da biodiversidade marinha com criação de novas UCs no RS (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202603/governo-do-brasil-avanca-na-protecao-da-biodiversidade-marinha-com-criacao-de-novas-unidades-de-conservacao-no-rs-1",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Lula anuncia pacote ambiental com novas áreas protegidas (Jornal de Brasília)",
+              "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/lula-anuncia-pacote-ambiental-com-novas-areas-protegidas/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ma-calor-extremo",
+      "esfera": "Meio Ambiente",
+      "titulo": "Planos estaduais e municipais contra calor extremo",
+      "descricao": "Estimular planos estaduais e municipais de enfrentamento ao calor extremo e fortalecer a Defesa Civil.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 73,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 73",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=73",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O AdaptaCidades apoia planos municipais de adaptação climática: reuniu 260 municípios prioritários na primeira etapa (2025), com a maioria dos planos prevista para 2026 e as ações em 2027. Há iniciativas locais, como o protocolo de calor de Belo Horizonte, mas não foi encontrado levantamento nacional de planos prontos. O plano de governo fala em 581 cidades.",
+          "fontes": [
+            {
+              "titulo": "AdaptaCidades: apoio a planos municipais de adaptação climática (Carta Capital)",
+              "url": "https://www.cartacapital.com.br/?p=519644",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "AdaptaCidades reuniu 260 municípios prioritários (Olhar Digital)",
+              "url": "https://olhardigital.com.br/curiosidades/?p=29569",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Protocolo de calor de Belo Horizonte (Prefeitura de BH)",
+              "url": "https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/obras-e-infraestrutura/2026/protocolo_de_calor_de_bh_coemc_pbh.pdf",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-protecao-social",
+      "esfera": "Desenvolvimento Social",
+      "titulo": "Manter e ampliar a proteção social",
+      "descricao": "Manter, aperfeiçoar e ampliar políticas de proteção social e de transferência de renda.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 18,
+      "linha_de_base": "Extrema pobreza em 4,6% da população e Gini de 0,504 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 18",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=18",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Bolsa Família atendia cerca de 19,3 milhões de famílias em agosto/2026. O orçamento de 2027 (enviado em 31/08) vinha sem reajuste, com R$ 157,1 bilhões (R$ 158,6 bi previstos para 2026). Depois, o governo anunciou reajuste de 15,04%: piso de R$ 600 para R$ 691 e benefício médio de R$ 675 para R$ 777, com impacto de R$ 5,8 bi em 2026 e R$ 22 bi em 2027. Não está claro se o PLOA já incorpora o reajuste. O anúncio ocorreu em ano eleitoral.",
+          "fontes": [
+            {
+              "titulo": "Bolsa Família fica sem reajuste previsto para 2027 (Times Brasil)",
+              "url": "https://timesbrasil.com.br/brasil/economia-brasileira/bolsa-familia-fica-sem-reajuste-previsto-para-2027/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo reajusta Bolsa Família em 15%; impacto é de R$ 5,8 bi em 2026 e R$ 22 bi em 2027 (DGABC)",
+              "url": "https://www.dgabc.com.br/Noticia/4347470/governo-reajusta-bolsa-familia-em-15-impacto-e-de-r-5-8-bi-em-2026-e-r-22-bi-em-2027",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Bolsa Família reajustado começa a ser pago (Poder360)",
+              "url": "https://www.poder360.com.br/poder-governo/bolsa-familia-reajustado-comeca-a-ser-pago/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-cuidados",
+      "esfera": "Desenvolvimento Social",
+      "titulo": "Política Nacional de Cuidados",
+      "descricao": "Apoiar Cuidotecas, lavanderias públicas, cozinhas solidárias e restaurantes populares, e criar programa de capacitação de cuidadores.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 26,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 26",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=26",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Política Nacional de Cuidados foi instituída pela Lei 15.069/2024 e regulamentada pelo Decreto 12.562/2025 (Plano Nacional de Cuidados \"Brasil que Cuida\"). A Portaria MDS 1.219, de 14/10/2026, fixou as regras gerais das Cuidotecas. Lavanderias públicas, cozinhas solidárias e o programa de capacitação de cuidadores não foram apurados; o orçamento citado (R$ 25 bi até 2027) vem de reportagem sem data confirmada.",
+          "fontes": [
+            {
+              "titulo": "Sancionada lei que institui a Política Nacional de Cuidados (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2024/12/26/sanciona-lei-que-institui-a-politica-nacional-de-cuidados",
+              "tipo": "oficial",
+              "data": "2024-12-26"
+            },
+            {
+              "titulo": "Governo regulamenta Política Nacional de Cuidados com novo decreto (Congresso em Foco)",
+              "url": "https://www.congressoemfoco.com.br/noticia/110482/governo-regulamenta-politica-nacional-de-cuidados-com-novo-decreto",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Portaria MDS nº 1.219, de 14 de outubro de 2026 (Lex)",
+              "url": "https://www.lex.com.br/portaria-mds-no-1-219-de-14-de-outubro-de-2026/",
+              "tipo": "outro",
+              "data": "2026-10-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-casas-mulher-brasileira",
+      "esfera": "Desenvolvimento Social",
+      "titulo": "Concluir 30 Casas da Mulher Brasileira e 15 Centros de Referência",
+      "descricao": "Ampliar a rede de proteção às mulheres, ampliar as Salas Lilás e distribuir kits de monitoramento de agressores.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 21,
+      "linha_de_base": "Pacto de Enfrentamento ao Feminicídio em vigor desde 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 21",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=21",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Segundo a ministra das Mulheres, Márcia Lopes (nov/2026), 13 Casas da Mulher Brasileira estão em funcionamento e mais duas serão inauguradas; até dezembro, 51 estarão em obra, em busca de terreno ou em licitação. Em março eram 11. Um acordo de 2023 previa 40 unidades até dez/2026, meta que ficou para trás. Os 15 Centros de Referência não foram apurados.",
+          "fontes": [
+            {
+              "titulo": "Márcia Lopes detalha novo Plano Nacional de Políticas para as Mulheres (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202611/marcia-lopes-detalha-novo-plano-nacional-de-politicas-para-as-mulheres-201cretrato-do-brasil201d",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Março das Mulheres reúne programação de mobilização e ampliação da rede de proteção (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202603/marco-das-mulheres-reune-programacao-de-mobilizacao-e-ampliacao-da-rede-de-protecao-feminina",
+              "tipo": "oficial",
+              "data": "2026-03-01"
+            },
+            {
+              "titulo": "Governo inaugura duas novas Casas da Mulher Brasileira em março (Jornal de Brasília)",
+              "url": "https://jornaldebrasilia.com.br/noticias/brasil/governo-inaugura-duas-novas-casas-da-mulher-brasileira-em-marco/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-universidade-indigena",
+      "esfera": "Desenvolvimento Social",
+      "titulo": "Implantar a Universidade Indígena",
+      "descricao": "Implantar plenamente a Universidade Indígena, criada em 2026, e seguir com demarcação e desintrusão de terras.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 20,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 20",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=20",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A Universidade Federal Indígena foi criada pela Lei 15.418, de 28/05/2026, com reitor e vice-reitor obrigatoriamente indígenas. A implantação plena está prevista para 2027 (dez cursos iniciais); ainda não há notícia de estrutura, concurso ou matrículas. Demarcações e desintrusões não foram apuradas.",
+          "fontes": [
+            {
+              "titulo": "Lei nº 15.418, de 28 de maio de 2026 (Planalto)",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15418.htm",
+              "tipo": "oficial",
+              "data": "2026-05-28"
+            },
+            {
+              "titulo": "Universidade Federal Indígena é criada com sede em Brasília (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/05/29/universidade-federal-indigena-e-criada-com-sede-em-brasilia",
+              "tipo": "oficial",
+              "data": "2026-05-29"
+            },
+            {
+              "titulo": "Governo publica lei que cria Universidade Federal Indígena (Bahia Notícias)",
+              "url": "https://www.bahianoticias.com.br/noticia/317391-governo-publica-lei-que-cria-universidade-federal-indigena",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-saneamento",
+      "esfera": "Desenvolvimento Social",
+      "titulo": "Água tratada e esgotamento sanitário",
+      "descricao": "Apoiar estados e municípios a universalizar o acesso a água tratada e esgoto, priorizando periferias.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 46,
+      "linha_de_base": "R$ 23,3 bilhões para novas obras e R$ 3,5 bilhões para obras inacabadas desde 2023 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 46",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=46",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Novo PAC destinou R$ 22,1 bilhões ao saneamento só em 2025. Porém, estudo do Instituto Trata Brasil com a GO Associados (jul/2026) conclui que o ritmo atual não cumprirá as metas do marco legal para 2033 (99% com água e 90% com coleta e tratamento de esgoto), e há pressão para adiar prazos. A maior parte dos investimentos vem de concessões privadas.",
+          "fontes": [
+            {
+              "titulo": "Brasil tem ano de investimentos e avanços em saneamento básico (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202601/brasil-tem-ano-de-investimentos-e-avancos-em-saneamento-basico",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Avanços do Marco Legal do Saneamento (Instituto Trata Brasil)",
+              "url": "https://tratabrasil.org.br/wp-content/uploads/2026/07/Release-Avancos-do-Marco-Legal-do-Saneamento.pdf",
+              "tipo": "outro",
+              "data": "2026-07-01"
+            },
+            {
+              "titulo": "Investimento em saneamento é insuficiente para cumprir meta até 2033 (Conjur)",
+              "url": "https://www.conjur.com.br/2026-jul-16/investimento-em-saneamento-e-insuficiente-para-cumprir-meta-ate-2033//?print=1",
+              "tipo": "imprensa",
+              "data": "2026-07-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ri-defesa",
+      "esfera": "Relações Internacionais",
+      "titulo": "Fortalecer defesa e indústria de defesa",
+      "descricao": "Dar continuidade a projetos estratégicos (Gripen, KC-390, fragatas) e reforçar a defesa cibernética.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 79,
+      "linha_de_base": "R$ 20,4 bilhões executados em projetos estratégicos desde 2023 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 79",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=79",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O primeiro caça Gripen F-39 fabricado no Brasil foi apresentado em 2026 (uma fonte indica 25/03; outra, voo inaugural em 06/10), e a Saab teria entregue 11 F-39E até junho/2026. A Colômbia assinou em 04/08/2026 contrato de cerca de US$ 366 milhões por dois KC-390. Há relato, ainda não confirmado, de que apenas dois dos oito KC-390 estavam operacionais em março e de corte orçamentário na FAB. Fragatas e defesa cibernética não foram apuradas.",
+          "fontes": [
+            {
+              "titulo": "Primeiro caça Gripen fabricado no Brasil deve ser apresentado em 25 de março (Jornal de Brasília)",
+              "url": "https://jornaldebrasilia.com.br/noticias/brasil/primeiro-caca-gripen-fabricado-no-brasil-deve-ser-apresentado-em-25-de-marco/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Colombia 13th nation to select KC-390 Millennium (AIN)",
+              "url": "https://www.ainonline.com/aviation-news/defense/2026-08-05/colombia-13th-nation-select-kc-390-millennium",
+              "tipo": "imprensa",
+              "data": "2026-08-05"
+            },
+            {
+              "titulo": "Brazil's Air Force in 2026: the Gripen fleet, the KC-390 and everything else it flies (Aerocorner)",
+              "url": "https://aerocorner.com/blog/brazilian-air-force/",
+              "tipo": "outro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ri-mercados-agro",
+      "esfera": "Relações Internacionais",
+      "titulo": "Abrir novos mercados para o agro",
+      "descricao": "Continuar a diplomacia comercial e as missões comerciais para diversificar destinos das exportações.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 62,
+      "linha_de_base": "656 novos mercados abertos no atual mandato (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 62",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=62",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Ministério da Agricultura anunciou em 13/10/2026 a marca de 700 aberturas de mercado desde 2023 (405 produtos, 99 países ou territórios), contra 656 citadas no plano. Por ano: 78 (2023), 222 (2024), 225 (2025) e 175 (2026 até outubro). Números divulgados pelo próprio governo. Na carne bovina, a China passou a aplicar tarifa total de 67% após esgotar a cota anual, em 1º/10.",
+          "fontes": [
+            {
+              "titulo": "De Paula: governo Lula abriu 700 novos mercados contra 241 do governo anterior (DGABC)",
+              "url": "https://www.dgabc.com.br/Noticia/4352516/de-paula-governo-lula-abriu-700-novos-mercados-contra-241-mercados-do-governo-anterior",
+              "tipo": "imprensa",
+              "data": "2026-10-13"
+            },
+            {
+              "titulo": "De Paula: governo Lula abriu 700 novos mercados (O Liberal)",
+              "url": "https://www.oliberal.com/economia/de-paula-governo-lula-abriu-700-novos-mercados-contra-241-mercados-do-governo-anterior-1.1182184",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Brasil deve superar meta de 700 aberturas de mercados em 2026, diz Mapa (Canal Rural)",
+              "url": "https://www.canalrural.com.br/economia/brasil-deve-superar-meta-de-700-aberturas-de-mercados-em-2026-diz-mapa/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-supercomputador",
+      "esfera": "Ciência e Tecnologia",
+      "titulo": "Infraestrutura computacional soberana",
+      "descricao": "Avançar em supercomputadores desenvolvidos e operados por instituições nacionais e fortalecer a IA de empresas brasileiras.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 54,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 54",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=54",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O novo supercomputador de IA ficará no Parque Científico e Tecnológico Augusto Severo (UFRN), em Macaíba (RN), com operação prevista para o fim de 2027 e sem substituir o Santos Dumont. Os valores divergem: o plano original falava em R$ 1,8 bi; o edital mais recente cita cerca de R$ 1,06 bi (7.200 petaflops em FP16). Uma reportagem anterior do Poder360 apontou atraso no edital. Regras de acesso para empresas ainda não foram detalhadas.",
+          "fontes": [
+            {
+              "titulo": "RN vai abrigar supercomputador brasileiro de Inteligência Artificial (Tribuna do Sertão)",
+              "url": "https://tribunadosertao.com.br/geral/2026/08/20/964051-rn-vai-abrigar-supercomputador-brasileiro-de-inteligencia-artificial",
+              "tipo": "imprensa",
+              "data": "2026-08-20"
+            },
+            {
+              "titulo": "Governo atrasa edital para compra do supercomputador do plano de IA (Poder360)",
+              "url": "https://www.poder360.com.br/poder-tech/governo-atrasa-edital-para-compra-do-supercomputador-do-plano-de-ia/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Supercomputador brasileiro de IA custará R$ 1 bi, mas não aposentará o Santos Dumont (Economic News Brasil)",
+              "url": "https://economicnewsbrasil.com.br/2026/08/22/supercomputador-brasileiro-ia-santos-dumont/",
+              "tipo": "imprensa",
+              "data": "2026-08-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-repatriacao",
+      "esfera": "Ciência e Tecnologia",
+      "titulo": "Repatriação e fixação de cientistas",
+      "descricao": "Dar sequência ao programa para cientistas brasileiros permanecerem ou retornarem ao país.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 51,
+      "linha_de_base": "599 pesquisadores aprovados de 2.500 interessados (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 51",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=51",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A chamada de Atração e Fixação de Talentos aprovou 599 projetos (566 em universidades e institutos, 33 em empresas) entre 1.593 propostas, com R$ 604 milhões do FNDCT e pesquisadores de 34 países; os projetos podem durar até cinco anos. Em 2026, o Profix-CB abre cerca de 1.000 bolsas de R$ 13 mil mensais para doutores (R$ 624 mi). Não há lista de aprovados de 2026.",
+          "fontes": [
+            {
+              "titulo": "Brasil quer repatriar talentos e investiu R$ 604 milhões (Convergência Digital)",
+              "url": "https://convergenciadigital.com.br/governo/brasil-quer-repatriar-talentos-e-investiu-r-604-milhoes/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "CNPq oferecerá 1 mil bolsas de R$ 13 mil mensais para cientistas (Diário de Pernambuco)",
+              "url": "https://www.diariodepernambuco.com.br/tecnologia/2025/12/11702647-cnpq-oferecera-1-mil-bolsas-de-rs-13-mil-mensal-para-cientistas.html",
+              "tipo": "imprensa",
+              "data": "2025-12-01"
+            },
+            {
+              "titulo": "Conhecimento Brasil aplica recursos do FNDCT em redes internacionais e fixação de cientistas (CNPq)",
+              "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/cnpq-em-acao/conhecimento-brasil-aplica-recursos-do-fndct-em-formacao-de-redes-internacionais-e-fixacao-de-cientistas-no-pais",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-fibra-5g",
+      "esfera": "Ciência e Tecnologia",
+      "titulo": "Reduzir o déficit de fibra óptica e ampliar o 5G no campo",
+      "descricao": "Zerar o déficit de fibra óptica que atinge 11% dos municípios e levar 5G ao campo, priorizando Norte, Nordeste e periferias.",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 55,
+      "linha_de_base": "11% dos municípios com déficit de fibra óptica (declarado no plano).",
+      "indicador": {
+        "unidade": "% dos municípios sem fibra",
+        "base": 11,
+        "meta": 0,
+        "casas": 0
+      },
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 55",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=55",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O governo prevê que 80% da população tenha 5G até o fim de 2026 e a expansão do 5G deve alcançar 2.220 municípios. A Anatel organizou um leilão reverso em 2026 para levar conectividade a comunidades rurais, quilombolas e indígenas (marcado para 17/06; resultado não confirmado). Não foi encontrado dado atualizado do déficit de fibra óptica (11% dos municípios, segundo o plano), então o indicador segue sem medição.",
+          "fontes": [
+            {
+              "titulo": "80% da população brasileira terá acesso ao 5G até o fim de 2026 (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202603/80-da-populacao-brasileira-tera-acesso-ao-5g-ate-o-fim-de-2026",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Anatel prepara leilão reverso para áreas sem cobertura (MobileTime)",
+              "url": "https://www.mobiletime.com.br/noticias/22/05/2026/anatel-leilao-reverso/",
+              "tipo": "imprensa",
+              "data": "2026-05-22"
+            },
+            {
+              "titulo": "Brasil supera meta e sinal 5G está em mais de 1,5 mil cidades (Brasil 61)",
+              "url": "https://brasil61.com/n/brasil-supera-meta-e-sinal-5g-esta-em-mais-de-1-5-mil-cidades-mcom260374.amp",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-soberania-digital",
+      "esfera": "Ciência e Tecnologia",
+      "titulo": "Conselho Nacional pela Soberania Digital",
+      "descricao": "Criar o Conselho Nacional pela Soberania Digital, com participação da sociedade.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 17,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 17",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=17",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Não foi encontrado ato criando o Conselho Nacional pela Soberania Digital. As buscas só retornaram uma sugestão em debate (modelo de governança inspirado no Conselho Monetário Nacional) e iniciativas separadas de nuvem soberana de estatais, como Serpro e Dataprev.",
+          "fontes": [
+            {
+              "titulo": "Pesquisadora sugere criação de Ministério da Transformação e da Soberania Digital (Conjur)",
+              "url": "https://www.conjur.com.br/?p=907007",
+              "tipo": "imprensa",
+              "data": "2026-06-01"
+            },
+            {
+              "titulo": "Soberania digital exige controle sobre dados e operação, aponta debate no CONIP (Serpro)",
+              "url": "https://www.serpro.gov.br/menu/noticias/noticias-2026/soberania-digital-exige-controle-sobre-dados-e-operacao-aponta-debate-no-conip-jud",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-fim-6x1",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Fim da escala 6x1 e jornada de 40 horas",
+      "descricao": "Atuar junto ao Senado pelo fim da escala 6x1 e redução da jornada para 40 horas sem redução salarial, nos termos aprovados na Câmara.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 75,
+      "linha_de_base": "Proposta já aprovada na Câmara dos Deputados (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 75",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=75",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "Emenda Constitucional 141/2026 promulgada em 16/10/2026 (aprovada no Senado em 14/10, por 75 a 1): acaba com a escala 6x1 e adota a 5x2 sem redução salarial. Em até 60 dias a jornada cai de 44 para 42 horas; o teto de 40 horas semanais chega ao fim da transição (cerca de 14 meses). Empresas que prestam serviço ao Estado têm 12 meses. A escala 5x2 ainda não está em vigor: uma fonte indica início em 15/12/2026, mas a contagem depende da publicação no Diário Oficial (confirmar).",
+          "fontes": [
+            {
+              "titulo": "Congresso promulga o fim da escala 6x1 e aposentadoria de agentes de saúde (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/10/16/congresso-promulga-o-fim-da-escala-6x1-e-aposentadoria-de-agentes-de-saude",
+              "tipo": "oficial",
+              "data": "2026-10-16"
+            },
+            {
+              "titulo": "Congresso promulga emenda do fim da 6x1; escala 5x2 começa em 60 dias (Agência Brasil)",
+              "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/congresso-promulga-emenda-do-fim-da-6x1-escala-5x2-comeca-em-60-dias",
+              "tipo": "oficial",
+              "data": "2026-10-16"
+            },
+            {
+              "titulo": "Senado aprova fim da 6x1 em primeiro turno (Agência Senado)",
+              "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/senado-aprova-fim-da-6x1-em-primeiro-turno",
+              "tipo": "oficial",
+              "data": "2026-10-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-terceirizacao",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Combater fraudes em terceirizações e a precarização",
+      "descricao": "Aprimorar a legislação trabalhista, alterando regras que induzem a precarização das condições de trabalho.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 75,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 75",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=75",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Não foi encontrado projeto do governo para combater fraudes em terceirizações. O cenário jurídico vai em outra direção: o STF discute a pejotização (Tema 1.389) e, em 18/06/2026, o ministro Gilmar Mendes retirou a suspensão nacional dos processos; o tribunal já admite terceirização na atividade-fim e tem cassado decisões que reconheciam vínculo quando não há fraude. O julgamento é esperado ainda em 2026.",
+          "fontes": [
+            {
+              "titulo": "Pejotização e a espera pela decisão do STF (Conjur)",
+              "url": "https://www.conjur.com.br/2026-jul-20/pejotizacao-e-a-espera-pela-decisao-do-stf//?print=1",
+              "tipo": "imprensa",
+              "data": "2026-07-20"
+            },
+            {
+              "titulo": "Pejotização — material de biblioteca (TST)",
+              "url": "https://www.tst.jus.br/documents/d/biblioteca/2026_02_pejotizacao",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-plataformas",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Regular o trabalho por plataformas com previdência",
+      "descricao": "Inserir na regulação do trabalho por aplicativos o financiamento da previdência e a cobertura de contingências sociais.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 77,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 77",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=77",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "atrasado",
+          "resumo": "O PLP 152/2025 (relator Augusto Coutinho) não avançou: a votação do parecer na comissão especial foi cancelada em abril/2026 após protestos da categoria e, a pedido do governo, adiada; o relator chegou a dizer que o projeto estava \"morto\". Reportagem de agosto indica que o texto continua parado. O texto prevê contribuição ao INSS sem vínculo empregatício. Confirmar a situação atual no site da Câmara.",
+          "fontes": [
+            {
+              "titulo": "Sob protestos e pressão de big techs, regulamentação do trabalho por aplicativos anda e para na Câmara (Money Times)",
+              "url": "https://www.moneytimes.com.br/sob-protestos-pressao-de-big-techs-e-disputa-politica-regulamentacao-do-trabalho-por-aplicativos-anda-e-para-na-camara-gaep/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Projeto sobre motoristas de aplicativo gera reação e ameaça paralisação nacional (Band)",
+              "url": "https://www.band.com.br/radio-bandeirantes/noticias/projeto-sobre-motoristas-de-aplicativo-gera-reacao-e-ameaca-paralisacao-nacional-202604131101",
+              "tipo": "imprensa",
+              "data": "2026-04-13"
+            },
+            {
+              "titulo": "Regulamentação de apps amplia proteção e inclui milhões na previdência (Congresso em Foco)",
+              "url": "https://www.congressoemfoco.com.br/noticia/118020/regulamentacao-de-apps-amplia-protecao-e-inclui-milhoes-na-previdencia",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-inss",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Concluir a modernização do INSS e reduzir filas",
+      "descricao": "Concluir a modernização dos serviços previdenciários e reduzir o tempo de espera por benefícios.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 77,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 77",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=77",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A fila de requerimentos caiu de 3,07 milhões (jan/2026) para cerca de 1,28 milhão em 24/08/2026 (-59%). O tempo médio de decisão varia conforme a fonte: 35 dias segundo a diretoria de Benefícios, 48 a 50 dias em outras divulgações. A espera pela perícia estaria em 17 dias (contra 70 em ago/2023), dado de fonte secundária.",
+          "fontes": [
+            {
+              "titulo": "Fila do INSS cai para 1,28 milhão em agosto, queda de 59% desde janeiro (Viva)",
+              "url": "https://viva.com.br/cidadania-e-direitos/fila-do-inss-cai-para-1282-milhao-em-agosto-queda-de-59-desde-janeiro.html",
+              "tipo": "imprensa",
+              "data": "2026-08-25"
+            },
+            {
+              "titulo": "Fila de espera do INSS cai para 1,2 milhão de requerimentos (Agência Brasil via Band)",
+              "url": "https://www.band.com.br/noticias/fila-de-espera-do-inss-cai-para-12-milhao-de-requerimentos-202608252018",
+              "tipo": "imprensa",
+              "data": "2026-08-25"
+            },
+            {
+              "titulo": "Fila do INSS atinge menor patamar em 21 meses (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202606/fila-do-inss-atinge-menor-patamar-em-21-meses-com-1-8-milhao-de-requerimentos",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-previdencia-flexivel",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Contribuição previdenciária mais flexível",
+      "descricao": "Construir mecanismos contributivos para trajetórias ocupacionais descontínuas.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 77,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 77",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=77",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Não há proposta oficial de contribuição previdenciária flexível. O ministro da Previdência citou, em entrevista, a ideia de incentivar contribuições menores de informais e MEIs, sem desenho nem cronograma, e descartou nova reforma. A Fazenda estuda contribuição de empresas com muitos PJs, que é tema de arrecadação, não de flexibilização.",
+          "fontes": [
+            {
+              "titulo": "Ministro da Previdência descarta nova reforma e rejeita medidas que penalizem trabalhadores (O Liberal)",
+              "url": "https://www.oliberal.com/economia/amp/ministro-da-previdencia-descarta-nova-reforma-e-rejeita-medidas-que-penalizem-trabalhadores-1.1140537",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo estuda cobrança de empresas com muitos PJs (SBT News)",
+              "url": "https://sbtnews.sbt.com.br/noticia/economia/governo-estuda-cobranca-de-empresas-com-muitos-p-js",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-salario-minimo",
+      "esfera": "Trabalho e Previdência",
+      "titulo": "Valorização real do salário mínimo",
+      "descricao": "Manter o aumento real anual do salário mínimo.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 73,
+      "linha_de_base": "Desemprego nas menores taxas da série e 8 milhões de empregos entre 2023 e jun/2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 73",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=73",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Projeto de Lei Orçamentária de 2027 (enviado em 31/08/2026) prevê salário mínimo de R$ 1.741, alta nominal de 7,4% sobre os R$ 1.621 atuais e ganho real de cerca de 2,3%, dentro do limite de 2,5% do arcabouço fiscal. O valor só será definitivo em dezembro (INPC de novembro) e o orçamento ainda será votado pelo Congresso.",
+          "fontes": [
+            {
+              "titulo": "Orçamento: governo estima salário mínimo de R$ 1.741 em 2027 (Poder360)",
+              "url": "https://poder360.com.br/poder-economia/orcamento-governo-estima-salario-minimo-de-r-1-741-em-2027/",
+              "tipo": "imprensa",
+              "data": "2026-08-31"
+            },
+            {
+              "titulo": "Projeto de orçamento de 2027 prevê salário mínimo de R$ 1.741 (Congresso em Foco)",
+              "url": "https://www.congressoemfoco.com.br/noticia/121825/projeto-de-orcamento-de-2027-preve-salario-minimo-de-r-1-741",
+              "tipo": "imprensa",
+              "data": "2026-08-31"
+            },
+            {
+              "titulo": "Governo projeta salário mínimo de R$ 1.741 para 2027 (Correio da Manhã)",
+              "url": "https://www.correiodamanha.com.br/nacional/brasil/2026/08/311021-governo-projeta-salario-minimo-de-rs-1-741-para-2027.html",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gp-ppa-participativo",
+      "esfera": "Gestão Pública",
+      "titulo": "PPA 2028-2031 participativo",
+      "descricao": "Elaborar um PPA ainda mais participativo e abrir o ciclo orçamentário federal à participação social.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 15,
+      "linha_de_base": "PPA 2024-2027 teve mais de 1,4 milhão de participantes (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 15",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=15",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Nenhum processo participativo do PPA 2028-2031 foi encontrado; o projeto só precisa ser enviado ao Congresso em 2027. Como referência, o PPA 2024-2027 teve 27 plenárias presenciais (mais de 34 mil participantes) e a plataforma Brasil Participativo, com 1,42 milhão de participantes e 8.254 propostas.",
+          "fontes": [
+            {
+              "titulo": "PPA entra na fase de governança e monitoramento (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202403/ppa-entra-na-fase-de-governanca-e-monitoramento-apos-a-reconstrucao-institucional-do-ano-passado-diz-secretaria-de-planejamento",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Perguntas frequentes — Plano Plurianual (Ministério do Planejamento)",
+              "url": "https://www.gov.br/planejamento/pt-br/assuntos/planejamento/perguntas-frequentes-seplan",
+              "tipo": "oficial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gp-emendas",
+      "esfera": "Gestão Pública",
+      "titulo": "Enfrentar a distorção das emendas parlamentares",
+      "descricao": "Propor reforma do sistema de emendas parlamentares ao orçamento.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 15,
+      "linha_de_base": "Emendas somaram R$ 50 bilhões no orçamento de 2026 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 15",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=15",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Não há proposta de reforma estrutural das emendas. O orçamento de 2027 (projeto) reserva R$ 44,8 bilhões para emendas individuais e de bancada (cerca de R$ 4 bi acima de 2026) e, somando as de comissão (R$ 12,6 bi, estimativa das consultorias), o total pode chegar a R$ 57,5 bilhões. A única ação encontrada é a proposta, na LDO, de permitir que parte das emendas individuais financie projetos escolhidos pela população (orçamento participativo), que ainda precisa de regulamentação.",
+          "fontes": [
+            {
+              "titulo": "Governo guarda R$ 44,8 bi para emendas parlamentares em 2027 (SBT News)",
+              "url": "https://sbtnews.sbt.com.br/noticia/politica/governo-guarda-r-44-8-bi-para-emendas-parlamentares-em-2027",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Emendas parlamentares podem chegar a R$ 57,5 bilhões em 2027 (Congresso em Foco)",
+              "url": "https://www.congressoemfoco.com.br/noticia/121966/emendas-parlamentares-podem-chegar-a-r-57-5-bilhoes-em-2027",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo, emendas parlamentares e orçamento participativo em 2027 (A Crítica)",
+              "url": "https://acritica.net/politica/governo-emendas-parlamentares-orcamento-participativo-2027/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gp-integridade",
+      "esfera": "Gestão Pública",
+      "titulo": "Plano de Integridade e Combate à Corrupção",
+      "descricao": "Aprofundar o Plano de Integridade e Combate à Corrupção 2025-2027 e estender a política de integridade.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 18,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 18",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=18",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Plano de Integridade e Combate à Corrupção 2025-2027 (lançado em dezembro/2024) tem cerca de 260 ações de 53 a 55 órgãos, segundo as fontes. O balanço do primeiro ano (09/12/2025) destacou R$ 558 milhões em pagamentos irregulares bloqueados preventivamente, e a CGU publicou o relatório de monitoramento de 2025. O \"aprofundamento\" para o próximo ciclo ainda não foi apurado.",
+          "fontes": [
+            {
+              "titulo": "Governo lança plano anticorrupção com ações de 2025 a 2027 (Poder360)",
+              "url": "https://www.poder360.com.br/poder-governo/governo-lanca-plano-anticorrupcao-com-acoes-de-2025-a-2027/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Relatório de Monitoramento do PICC 2025 (CGU)",
+              "url": "https://www.gov.br/cgu/pt-br/plano-de-integridade-e-combate-a-corrupcao-2025-2027/relatorio-monitoramento-picc-2025.pdf",
+              "tipo": "oficial"
+            },
+            {
+              "titulo": "Integridade como pilar da democracia: balanço na CGU (Okai)",
+              "url": "https://okai.com.br/noticia/2025-12-09/integridade-como-pilar-da-democracia-e-destaque-na-celebracao-do-dia-internacional-contra-a-corrupcao-na-cgu",
+              "tipo": "imprensa",
+              "data": "2025-12-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gp-portal-transparencia",
+      "esfera": "Gestão Pública",
+      "titulo": "Portal da Transparência inteligente (dados abertos + IA)",
+      "descricao": "Investir para evoluir o Portal da Transparência para uma plataforma baseada em dados abertos e inteligência artificial.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 18,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 18",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=18",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A CGU lançou o Informa.BR, plataforma com IA que busca dados públicos no Portal da Transparência, no Portal de Dados Abertos e em respostas da Lei de Acesso à Informação. Foi anunciada na Semana de Governo Aberto 2026 e, segundo a Agência Brasil (30/06/2026), já estava disponível. Não se trata de uma reformulação do próprio Portal da Transparência, que era o que o plano descrevia.",
+          "fontes": [
+            {
+              "titulo": "Nova plataforma usa IA para facilitar acesso a dados públicos (Agência Brasil)",
+              "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-06/nova-plataforma-usa-ia-para-facilitar-acesso-dados-publicos/",
+              "tipo": "oficial",
+              "data": "2026-06-30"
+            },
+            {
+              "titulo": "Informa.BR: nova plataforma de busca inteligente da CGU (Legismap)",
+              "url": "https://legismap.com.br/conteudos/artigos-e-noticias/informa-br-nova-plataforma-de-busca-inteligente-da-cgu-vai-simplificar-acesso-a-informacoes-do-governo-do-brasil",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Ministro promete para junho nova plataforma unificada de acesso a informações da União (Money Times)",
+              "url": "https://www.moneytimes.com.br/ministro-promete-para-junho-nova-plataforma-unificada-de-acesso-a-informacoes-da-uniao-fets/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gp-letramento-digital",
+      "esfera": "Gestão Pública",
+      "titulo": "Política Nacional de Letramento Digital",
+      "descricao": "Instituir política para capacitar cidadãos a navegar criticamente na rede e combater a desinformação.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 17,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 17",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=17",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "nao_iniciado",
+          "resumo": "Nenhuma Política Nacional de Letramento Digital foi lançada: ela aparece como proposta do plano de governo. Existe a Política Nacional de Educação Digital (Lei 14.533/2023), voltada às escolas, e o MCTI prorrogou por 21 meses o projeto \"Letramento Digital\" (R$ 39,4 mi; aditivo de 04/03/2026), que é outra iniciativa.",
+          "fontes": [
+            {
+              "titulo": "Lula: letramento digital no plano de governo (Teletime)",
+              "url": "https://teletime.com.br/10/08/2026/lula-letramento-digital-plano-governo/",
+              "tipo": "imprensa",
+              "data": "2026-08-10"
+            },
+            {
+              "titulo": "MCTI prorroga por 21 meses e mantém R$ 39,4 milhões para projeto de Letramento Digital (Atlas Público)",
+              "url": "https://atlaspublico.com.br/noticias/mcti-prorroga-por-21-meses-e-mantem-rs-39-4-milhoes-para-24063",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Lula sanciona lei que cria a Política Nacional de Educação Digital (Jornal Contábil)",
+              "url": "https://jornalcontabil.com.br/noticia/lula-sanciona-lei-que-cria-a-politica-nacional-de-educacao-digital/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ag-plano-safra-af",
+      "esfera": "Agricultura",
+      "titulo": "Expandir o Plano Safra da Agricultura Familiar",
+      "descricao": "Continuar expandindo o crédito rural, com juros compatíveis e prioridade à produção da cesta básica.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 59,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 59",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=59",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O Plano Safra da Agricultura Familiar 2026/2027 foi anunciado em 30/06/2026: R$ 97,3 bilhões, dos quais R$ 85,2 bilhões no Pronaf (cerca de 9% a mais que os R$ 78,2 bilhões do ciclo anterior). As principais linhas do Pronaf tiveram juros reduzidos em 0,5 a 1 ponto percentual; para alimentos, uma fonte cita queda de 3% para 2% ao ano. Vigência: 01/07/2026 a 30/06/2027.",
+          "fontes": [
+            {
+              "titulo": "Plano Safra da Agricultura Familiar 2026/2027 tem aporte de R$ 97,3 bilhões (Forbes)",
+              "url": "https://forbes.com.br/forbes-agro/2026/06/plano-safra-da-agricultura-familiar-2026-2027-tem-aporte-de-r-973-bilhoes/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Plano Safra da Agricultura Familiar prevê R$ 85,2 bilhões para o Pronaf (Canal Rural)",
+              "url": "https://www.canalrural.com.br/politica/plano-safra-da-agricultura-familiar-preve-r-852-bilhoes-para-o-pronaf-em-2026-2027/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Plano Safra 26/27 para a agricultura familiar (Cooperativismo de Crédito)",
+              "url": "https://cooperativismodecredito.coop.br/2026/06/plano-safra-26-27-para-a-agricultura-familiar/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ag-alimentacao-escolar",
+      "esfera": "Agricultura",
+      "titulo": "Alimentação escolar com 45% da agricultura familiar",
+      "descricao": "Apoiar estados e municípios a cumprir os percentuais de compra da agricultura familiar (45%) e de alimentos in natura (80%).",
+      "tipo": "meta",
+      "prazo": "2030",
+      "plano_pagina": 59,
+      "linha_de_base": "Percentuais de 45% e 80% já fixados em regra (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 59",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=59",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O piso de 45% dos recursos federais do PNAE para compras da agricultura familiar está na Lei 15.226/2025. Em 22-23/10/2026, o FNDE publicou resolução (nº 17/2026, segundo a maioria das fontes) com novos critérios de seleção, que priorizam fornecedores locais, mulheres e jovens. O orçamento do PNAE em 2026 é estimado em R$ 6,7 bi. Não foram encontrados dados de cumprimento municipal em 2026 (o mais recente é de 2022).",
+          "fontes": [
+            {
+              "titulo": "Governo aprimora compra de alimentos da agricultura familiar para a alimentação escolar (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202610/governo-aprimora-compra-de-alimentos-da-agricultura-familiar-para-a-alimentacao-escolar",
+              "tipo": "oficial",
+              "data": "2026-10-23"
+            },
+            {
+              "titulo": "Resolução FNDE nº 17, de 22 de outubro de 2026 (Lex)",
+              "url": "https://www.lex.com.br/resolucao-fnde-no-17-de-22-de-outubro-de-2026/",
+              "tipo": "outro",
+              "data": "2026-10-22"
+            },
+            {
+              "titulo": "Nova regra destina ao menos 45% dos recursos federais do Pnae à agricultura familiar (Diário do Comércio)",
+              "url": "https://diariodocomercio.com.br/agronegocio/nova-regra-pnae-agricultura-familiar/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ag-agroecologia",
+      "esfera": "Agricultura",
+      "titulo": "Plano Nacional de Agroecologia",
+      "descricao": "Fortalecer a agroecologia e a produção orgânica por meio de plano nacional e linhas de crédito específicas.",
+      "tipo": "medida",
+      "prazo": "2030",
+      "plano_pagina": 60,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 60",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=60",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "mantido",
+          "resumo": "O plano nacional em vigor é o 3º Planapo (2024-2027), lançado em 16/10/2024, e o Pronara (redução de agrotóxicos) está regulamentado. Em 2026 só se apurou a Campanha Nacional de Promoção do Produto Orgânico, sem metas, orçamento ou prazos divulgados. Não há novo plano nem linhas de crédito novas confirmadas.",
+          "fontes": [
+            {
+              "titulo": "Plano Nacional de Agroecologia e Produção Orgânica é lançado (Agência Gov)",
+              "url": "https://agenciagov.ebc.com.br/noticias/202410/plano-nacional-de-agroecologia-e-producao-organica-e-lancado-no-dia-mundial-da-alimentacao",
+              "tipo": "oficial",
+              "data": "2024-10-16"
+            },
+            {
+              "titulo": "Mapa lança campanha nacional de promoção da produção orgânica (Canal Rural)",
+              "url": "https://www.canalrural.com.br/agricultura/mapa-lanca-campanha-nacional-de-promocao-da-producao-organica/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Decreto cria programa de transição agroecológica (Fundação Perseu Abramo)",
+              "url": "https://fpabramo.org.br/lula-cria-programa-para-cortar-uso-de-agrotoxicos/",
+              "tipo": "outro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ag-reforma-agraria",
+      "esfera": "Agricultura",
+      "titulo": "Reforma agrária e regularização fundiária",
+      "descricao": "Continuar a reforma agrária, a regularização fundiária e a titulação de territórios quilombolas.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 60,
+      "linha_de_base": null,
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 60",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=60",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "A ministra do MDA fala em 266 mil famílias incluídas no Programa Nacional de Reforma Agrária (meta de 300 mil até o fim do ano), mas outra contagem citada pelo Brasil de Fato aponta só 58,6 mil novas famílias assentadas até julho/2026: \"incluídas\" e \"assentadas\" não são a mesma coisa. Em junho, foram entregues 18 títulos quilombolas (cerca de 34% de todos os já emitidos pelo Incra na história). Valores variam conforme a fonte e várias são comunicação oficial.",
+          "fontes": [
+            {
+              "titulo": "\"Não podemos aceitar retrocessos\", diz ministra do MDA sobre reforma agrária (Brasil de Fato)",
+              "url": "https://www.brasildefato.com.br/2026/09/10/nao-podemos-aceitar-retrocessos-diz-ministra-do-mda-sobre-reforma-agraria-no-brasil/",
+              "tipo": "imprensa",
+              "data": "2026-09-10"
+            },
+            {
+              "titulo": "Lula entrega 18 novos títulos de territórios quilombolas (Diário de Pernambuco)",
+              "url": "https://www.diariodepernambuco.com.br/politica/2026/06/11716391-lula-entrega-18-novos-titulos-de-territorios-quilombolas.html",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Lula anuncia ações de R$ 2,7 bi para reforma agrária (Poder360)",
+              "url": "https://www.poder360.com.br/poder-governo/lula-anuncia-acoes-de-r-27-bi-para-reforma-agraria/",
+              "tipo": "imprensa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ag-biocombustiveis",
+      "esfera": "Agricultura",
+      "titulo": "Ampliar biocombustíveis (etanol, biodiesel, SAF)",
+      "descricao": "Ampliar a produção de biocombustíveis e o aproveitamento de subprodutos da agroindústria para bioenergia e biogás.",
+      "tipo": "continuidade",
+      "prazo": "2030",
+      "plano_pagina": 63,
+      "linha_de_base": "Mistura obrigatória elevada para E32 e B15 (declarado no plano).",
+      "historico": [
+        {
+          "data": "2026-11-09",
+          "status": "nao_avaliado",
+          "resumo": "Objetivo extraído do plano de governo registrado no TSE. Aguardando a primeira apuração com fontes independentes.",
+          "fontes": [
+            {
+              "titulo": "Programa de Governo (candidato 13), p. 63",
+              "url": "src/assets/planos_pdf/13_LULA.pdf#page=63",
+              "tipo": "plano"
+            }
+          ]
+        },
+        {
+          "data": "2026-11-09",
+          "status": "em_andamento",
+          "resumo": "O B15 (biodiesel) vale desde agosto de 2025 e o E30 (etanol) foi aprovado em 2025. O plano afirma que a mistura já foi ampliada para E32, mas as fontes encontradas mostram que o E32 ainda depende de aprovação do CNPE (reunião de maio cancelada) e de testes técnicos, e que o aumento do biodiesel deve ficar para 2027. Metas obrigatórias de SAF começam em 2027. Confirmar a situação atual no CNPE/ANP.",
+          "fontes": [
+            {
+              "titulo": "Aumento da mistura obrigatória do diesel não deve sair em 2026 (Poder360)",
+              "url": "https://www.poder360.com.br/poder-energia/aumento-da-mistura-obrigatoria-do-diesel-nao-deve-sair-em-2026/",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "MME marca apresentação de estudos para elevar mistura de etanol (Eixos)",
+              "url": "https://eixos.com.br/combustiveis-e-bioenergia/biocombustiveis/mme-marca-apresentacao-de-estudos-para-elevar-mistura-de-etanol",
+              "tipo": "imprensa"
+            },
+            {
+              "titulo": "Governo eleva mistura do etanol na gasolina a 30% e a do biodiesel no diesel a 15% (Mercado & Consumo)",
+              "url": "https://mercadoeconsumo.com.br/25/06/2025/economia/governo-eleva-mistura-do-etanol-na-gasolina-a-30-e-a-do-biodiesel-no-diesel-a-15/",
+              "tipo": "imprensa",
+              "data": "2025-06-25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

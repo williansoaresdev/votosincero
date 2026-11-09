@@ -1,110 +1,83 @@
-# Voto Sincero
+# Voto Sincero — Monitor do plano de governo
 
-Aplicativo web (PWA) que ajuda o eleitor a descobrir, de forma **cega** (sem saber de quem são as propostas), quais candidatos a presidente do Brasil nas eleições de 2026 mais combinam com os seus valores — a partir do conteúdo real dos planos de governo registrados.
+Aplicativo web (PWA) estático que acompanha, com fontes públicas, o andamento de cada objetivo do plano de governo do presidente reeleito (Lula, 13) para o mandato **2027–2030**.
 
 🔗 Site: **votosincero.com.br**
 
+> O teste cego de planos de governo das eleições de 2026 (1º e 2º turno) está preservado na branch [`quiz-eleicoes-2026-backup`](https://github.com/williansoaresdev/votosincero/tree/quiz-eleicoes-2026-backup) e na tag `v-quiz-final-2026`. A branch `PrimeiroTurno2026` guarda a versão do 1º turno.
+
 ## Como funciona
 
-1. **Home** — o eleitor lê uma provocação ("Vamos descobrir qual candidato representa os seus valores?") e clica em **Começar**.
-2. **Teste cego por esfera de assunto** — o app apresenta, uma de cada vez e em ordem aleatória, 12 esferas temáticas (Educação, Economia, Saúde, Segurança, Transporte, Meio Ambiente, Desenvolvimento Social, Relações Internacionais, Ciência e Tecnologia, Trabalho e Previdência, Gestão Pública e Agricultura). Para cada esfera, as propostas dos candidatos aparecem **sem identificação e em ordem aleatória**; o eleitor pode marcar **até 3 propostas** que mais combinam com ele, e ver o texto completo do plano em um pop-up ("Ver plano completo").
-3. **Resultado** — ao final, o app mostra o ranking dos candidatos por número de propostas escolhidas que coincidem com cada um, com foto, partido, número de urna, a lista das propostas aceitas e um botão para baixar o PDF do plano de governo completo do candidato. A tela também traz o link oficial de consulta de planos de governo do TSE e um contato por e-mail.
+- **Painel** — panorama por status (barra empilhada), busca, filtro por área e lista de objetivos.
+- **Objetivo** — descrição, ponto de partida (declarado no plano), indicador numérico quando existe, link para a página do PDF e **histórico de apurações com fontes**.
+- **Metodologia** — de onde vêm os objetivos, como apuramos e o que cada status significa.
 
-## Estrutura do projeto
+Toda a informação vem de **`objetivos.json`**. Não há backend: atualizar o app é editar esse arquivo e fazer commit na `main` (o GitHub Actions publica por FTP no cPanel).
+
+## Rotina mensal de atualização
+
+1. Para cada objetivo, pesquise fontes (Diário Oficial, Portal da Transparência, Câmara/Senado, IBGE, ministérios, imprensa profissional).
+2. Acrescente **uma nova entrada no fim de `historico`** do objetivo — nunca edite as antigas, o histórico é o registro:
+
+   ```json
+   {
+     "data": "2027-02-05",
+     "status": "em_andamento",
+     "valor": 68,
+     "resumo": "Frase curta e factual sobre o que mudou.",
+     "fontes": [
+       { "titulo": "Título da matéria/ato", "url": "https://...", "tipo": "oficial", "data": "2027-02-03" }
+     ]
+   }
+   ```
+
+   - `status`: `nao_avaliado`, `nao_iniciado`, `em_andamento`, `mantido`, `atrasado`, `cumprido` ou `descumprido`. O status mostrado no app é o da **entrada mais recente**. Use `mantido` quando a promessa é manter um programa ou regra que já existia e ele segue em vigor sem expansão nem mudança relevante; se houver ampliação ou ação nova, use `em_andamento`; se o programa for reduzido ou abandonado, `descumprido`.
+   - `valor` (opcional): só para objetivos que têm `indicador` (`unidade`, `base`, `meta`); alimenta a barra de progresso.
+   - `fontes`: obrigatória para qualquer status diferente de `nao_avaliado`. `tipo`: `oficial`, `imprensa`, `dados`, `plano` ou `outro`.
+3. Atualize `atualizado_em` (raiz do JSON) com a data da apuração.
+4. Rode a validação:
+
+   ```bash
+   python scripts/validar_objetivos.py
+   ```
+
+5. Commit e push na `main`. O workflow valida de novo e só publica se estiver tudo certo.
+
+Para o app mostrar a versão nova mesmo a quem tem o PWA instalado, o service worker busca `objetivos.json` na rede primeiro (o cache só serve de fallback offline).
+
+## Adicionar ou ajustar um objetivo
+
+Inclua um item em `objetivos` com `id` único, `esfera` (uma das 12 áreas), `titulo`, `descricao`, `tipo` (`meta`, `medida` ou `continuidade`), `prazo`, `plano_pagina` (página do **PDF**, que é a numerada do leitor de PDF — uma a mais que a impressa), `linha_de_base` (opcional) e um `historico` inicial com status `nao_avaliado`. Veja os itens existentes como modelo.
+
+## Estrutura
 
 ```
-├── index.html                 # shell da aplicação (SPA)
-├── manifest.webmanifest       # manifesto do PWA
-├── service-worker.js          # cache do app shell + cache em runtime de imagens/PDFs
-├── css/
-│   └── styles.css             # tema visual (paleta verde, componentes, animações)
+├── index.html               # shell da SPA
+├── objetivos.json           # FONTE DE DADOS: objetivos + histórico de apurações
+├── manifest.webmanifest     # manifesto do PWA
+├── service-worker.js        # rede primeiro para shell e JSON; cache para PDF/imagens
+├── css/styles.css           # tema visual
 ├── js/
-│   ├── app.js                 # bootstrap, navegação e histórico do navegador
-│   ├── router.js              # transições entre telas (efeito "slide" estilo Duolingo)
-│   ├── state.js                # estado da sessão do teste (respostas, progresso)
-│   ├── data.js                 # carregamento de planos_governo.json e metadados
-│   ├── audio.js                # efeitos sonoros sintetizados (Web Audio API)
-│   ├── utils.js                 # helpers (shuffle, criação de elementos DOM)
-│   ├── modal.js                 # pop-up "ver plano completo"
-│   └── views/
-│       ├── home.js              # tela inicial
-│       ├── quiz.js              # tela de cada esfera (seleção cega, limite de 3)
-│       └── result.js            # tela de resultado / ranking
-├── icons/                      # ícones do PWA em todos os tamanhos (gerados do logo)
+│   ├── app.js               # bootstrap e rotas por hash (#/, #/o/<id>, #/sobre)
+│   ├── data.js              # carga do JSON, status, cálculo de progresso
+│   ├── analytics.js         # Google Analytics 4
+│   ├── share.js, toast.js, utils.js
+│   └── views/               # home.js (painel), detail.js, about.js, common.js
 ├── scripts/
-│   └── generate_icons.py       # gera os ícones em icons/ a partir do logo
-├── src/assets/
-│   ├── imagens/                # LogoFull.png + fotos dos candidatos (CandidatoNN.png)
-│   └── planos_pdf/              # PDFs originais dos planos de governo (NN_NOME.pdf)
-├── planos_governo.json         # banco de dados dos planos de governo (usado pelo app)
-├── planos_governo.xlsx         # mesma base em formato Excel, para conferência manual
-└── esferas.txt                 # lista de referência das 12 esferas temáticas
+│   ├── validar_objetivos.py # valida o JSON (roda também no deploy)
+│   └── generate_icons.py    # gera os ícones do PWA
+├── src/assets/planos_pdf/13_LULA.pdf   # plano de governo original (fonte primária)
+└── .github/workflows/deploy.yml        # valida e publica por FTP no cPanel
 ```
 
-## Base de dados dos planos de governo
-
-`planos_governo.json` foi extraído a partir dos PDFs oficiais em `src/assets/planos_pdf/` e tem o formato:
-
-```json
-{
-  "candidatos": [
-    {
-      "numero": "13",
-      "nome": "Luiz Inácio Lula da Silva (Lula)",
-      "partido": "PT (coligação com PSB, PV, PCdoB, PDT, PSOL e Rede)",
-      "esferas": {
-        "Educação": { "macro": "texto completo da proposta...", "tweet": "resumo com até 140 caracteres" },
-        "...": { "...": "..." }
-      }
-    }
-  ],
-  "registros": [
-    { "Numero_Urna": "13", "Candidato": "...", "Partido": "...", "Esfera": "Educação", "Descricao_Macro": "...", "Descricao_Resumida_Tweet": "..." }
-  ]
-}
-```
-
-- Campos vazios (`""`) indicam que o plano do candidato não trazia proposta identificável para aquela esfera — nesse caso a proposta não aparece como opção no teste cego.
-- `planos_governo.xlsx` traz a mesma informação em formato de planilha (uma linha por candidato × esfera), útil para revisão manual.
-- O app associa cada candidato ao seu PDF (`src/assets/planos_pdf/NN_NOME.pdf`) e à sua foto (`src/assets/imagens/CandidatoNN.png`) através do **número de urna**, mapeado em [`js/data.js`](js/data.js).
-
-Para atualizar a base (novo candidato, correção de texto, etc.), edite `planos_governo.json` diretamente — o app lê o arquivo em tempo de execução (`fetch('./planos_governo.json')`), sem passo de build.
-
-## Rodando localmente
-
-O projeto é um **PWA estático** (HTML/CSS/JS puro, sem framework nem etapa de build). Basta servir a pasta por HTTP — abrir `index.html` direto do disco (`file://`) não funciona, pois o navegador bloqueia o `fetch` do JSON e o service worker.
-
-Com Python instalado:
+## Desenvolvimento local
 
 ```bash
 python -m http.server 8765
 ```
 
-Depois acesse `http://localhost:8765`.
-
-> Para instalar como app (PWA) e testar o funcionamento offline, o site precisa ser servido via **HTTPS** (ou `localhost`), requisito dos navegadores para Service Workers.
-
-## Ícones do PWA
-
-Os ícones em `icons/` (todos os tamanhos, incluindo as versões *maskable*) são gerados a partir de `src/assets/imagens/LogoFull.png` pelo script:
-
-```bash
-python scripts/generate_icons.py
-```
-
-Rode-o novamente sempre que o logo for atualizado.
-
-## Atualizando o cache do Service Worker
-
-Ao alterar `index.html`, `css/styles.css` ou qualquer arquivo em `js/`, incremente a constante `VERSION` em [`service-worker.js`](service-worker.js). Isso invalida o cache antigo nos navegadores dos usuários e força o download dos arquivos novos na próxima visita.
-
-## Tecnologias
-
-- HTML, CSS e JavaScript puro (ES Modules), sem build/bundler.
-- PWA: `manifest.webmanifest` + `service-worker.js` (cache do app shell e cache em runtime de imagens/PDFs).
-- Efeitos sonoros sintetizados via **Web Audio API** (sem arquivos de áudio externos).
-- Sem dependências de backend: toda a lógica roda no navegador do usuário.
+e abra `http://localhost:8765`.
 
 ## Licença
 
-Distribuído sob a licença Apache 2.0 — veja [LICENSE](LICENSE).
+Veja [LICENSE](LICENSE).

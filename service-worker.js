@@ -1,28 +1,23 @@
-const VERSION = "v11";
+const VERSION = "v12";
 const APP_SHELL_CACHE = `voto-sincero-shell-${VERSION}`;
 const RUNTIME_CACHE = `voto-sincero-runtime-${VERSION}`;
 
 const APP_SHELL_FILES = [
   "./",
   "./index.html",
-  "./imprensa.html",
   "./manifest.webmanifest",
-  "./planos_governo.json",
+  "./objetivos.json",
   "./css/styles.css",
   "./js/app.js",
-  "./js/router.js",
-  "./js/state.js",
   "./js/data.js",
-  "./js/audio.js",
   "./js/utils.js",
-  "./js/modal.js",
-  "./js/install.js",
   "./js/share.js",
   "./js/toast.js",
   "./js/analytics.js",
+  "./js/views/common.js",
   "./js/views/home.js",
-  "./js/views/quiz.js",
-  "./js/views/result.js",
+  "./js/views/detail.js",
+  "./js/views/about.js",
   "./icons/icon-72.png",
   "./icons/icon-96.png",
   "./icons/icon-128.png",
@@ -88,15 +83,24 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // App shell (HTML/CSS/JS/ícones/manifest/JSON principal): cache-first.
+  // App shell e objetivos.json: rede primeiro (o JSON é atualizado todo mês e o
+  // leitor precisa ver a versão nova), com cache como fallback offline.
   if (isAppShellRequest(url)) {
     event.respondWith(
-      caches.match(request).then((cached) => cached || fetch(request))
+      fetch(request)
+        .then((response) => {
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(APP_SHELL_CACHE).then((cache) => cache.put(request, copy));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
     );
     return;
   }
 
-  // Imagens de candidatos e PDFs dos planos: cache-first com preenchimento
+  // PDF do plano de governo e imagens: cache-first com preenchimento
   // em segundo plano (runtime cache), para funcionar offline após a 1ª visita.
   if (url.pathname.includes("/src/assets/")) {
     event.respondWith(
