@@ -20,10 +20,12 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          server-dir: ${{ secrets.FTP_FOLDER }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftp' }}
+          server-dir: ${{ vars.FTP_SERVER_DIR }}
           exclude: |
             **/.git*
             **/.git*/**
